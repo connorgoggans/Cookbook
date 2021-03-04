@@ -5,6 +5,9 @@
 \usepackage[T1]{fontenc}
 \usepackage{nicefrac}
 \usepackage {graphicx}
+\usepackage{siunitx}
+\usepackage{xfrac}
+\sisetup{quotient-mode = fraction}
 \usepackage[margin=1.25in]{geometry} 
 \usepackage[pdftex]{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue}
@@ -2766,12 +2769,13 @@ Source: ``The Food Lab'' by J. Kenji L\'{o}pez-Alt.
 4 grams cure \#1;
 4 3-foot sections of natural hog casings for sausage (e.g. Natural Hog Casings for Sausage by Oversea Casing);
 \threequarters cups water;
-1 ounce dry milk powder;
+28 grams dry milk powder;
  split oak logs for smoking.}
 
 \textsc{This is my attempt to produce East Texas style German sausage like the Original Smoked Sausage made by Kreuz Market in Lockhart, Texas. According to their web site, Kreuz sausage is 85\% beef and 15\% pork, smoked using post oak, and seasoned using only salt, pepper and cayenne. This recipe has the same percentages of beef and pork as Kreuz sausage, is smoked using oak, and is seasoned with salt, black pepper and cayenne.}
 
-Cut the brisket and pork shoulder into one-inch cubes.
+Trim the brisket and port shoulder so the meat to be made into sausage is around 70\% lean and 30\% fat. Weigh out the required portions of brisket and pork shoulder and then
+cut the brisket and pork shoulder into one-inch cubes. 
 
 In a large metal or glass bowl, combine the meat cubes with the salt, cayenne pepper, black pepper, and cure \#1.
 
@@ -2781,12 +2785,10 @@ Rinse salt off casings and place in a bowl with cold water to soak.  Casings sho
 
 Place bag with beef and pork mixture in freezer for around 30 minutes then grind mixture using a 10 mm plate. Grind directly into the bowl of a KitchenAid mixer. Feed a piece of stale bread or a sheet of paper towel through the grinder to force out any remaining bits of sausage. Grind the meat mixture a second time with the 4.5 mm plate.
 
-Add water and milk powder to the mixer bowl containing the ground meat. With the mixer's paddle attachment, mix the sausage on medium-low speed until homogeneous and tacky, about 2 minutes. Load sausage into stuffer. 
+Add half the water and half the milk powder to the mixer bowl containing half the ground meat. With the mixer's paddle attachment, mix the sausage on medium-low speed until homogeneous and tacky, about 2 minutes. Repeat with the remaining water, milk powder, and ground meat. Load sausage into stuffer. 
 
-Place open end of casing on the end of the kitchen faucet and inflate with water until fully inflated. Drain and place on small stuffer tube. Tie a knot in the end of the casing and evenly fill with sausage. Stop before the end of the casing and tie off with another knot.  Divide into links and twist to separate. 
+Place open end of casing on the end of the kitchen faucet and inflate with water until fully inflated. Drain and place on small stuffer tube. Tie a knot in the end of the casing and evenly fill with sausage. Stop before the end of the casing and tie off with another knot.  Divide the 3-foot sections into 6 links and twist to separate. After twisting there should be approximately \threequarters inch between links. 
 
-
-There are a few different ways to create individual sausage links depending on the look you desire for your final product. You can use butcher twine to tie square knots between the links. Another option is to simply twist the casing several times to create individual links. This method works especially well for natural casing.
 
 Arrange the sausage links on a half-sheet pan  then place the pan in refrigerator on the bottom shelf to chill before smoking. If it is convenient you can leave the sausages in the refrigerator overnight and smoke them the next day. Pull the sausages out of the refrigerator an hour before smoking in order to allow the casings to dry at room temperature.
 
@@ -2817,6 +2819,14 @@ Source: Modified from a recipe found at https://blog.cavetools.com/texas-sausage
 
 Source: ``The Food Lab'' by J. Kenji L\'{o}pez-Alt.
 
+\recipe{Grinder Plate Sizes}
+\textsc{This is not a recipe but rather a list of meat grinder plate hole sizes giving the hole diameter in mm and the approximate equivalent diameter as a rational number in inches.}
+
+$$ \SI{3}{\milli\meter} \approx \SI[fraction-function=\sfrac]{1/8}{inch}$$
+$$ \SI{4.5}{\milli\meter} \approx \SI[fraction-function=\sfrac]{3/16}{inch}$$
+$$ \SI{6}{\milli\meter} \approx \SI[fraction-function=\sfrac]{1/4}{inch}$$
+$$ \SI{10}{\milli\meter} \approx \SI[fraction-function=\sfrac]{3/8}{inch}$$
+$$ \SI{16}{\milli\meter} \approx \SI[fraction-function=\sfrac]{5/8}{inch}$$
 \chapter{Thanksgiving}
 
 \recipe{Cranberry Orange Relish}
