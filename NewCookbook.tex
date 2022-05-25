@@ -12,6 +12,17 @@
 \usepackage[pdftex]{hyperref}
 \hypersetup{colorlinks=true,linkcolor=blue}
 
+
+% Include the following to enable nicer-looking tables
+\usepackage{booktabs}
+\usepackage{tabularx}
+% Add some padding between caption and table toprule
+\setlength{\abovetopsep}{2ex}
+% Add some vertical padding between table elements
+\renewcommand{\arraystretch}{1.2}
+% See the example in the body of the report for how to actually create the table
+
+
 \newcommand{\bsi}[2]{%
   \fontencoding{T1}\fontfamily{cmr}\fontseries{m}\fontshape{n}%
   \fontsize{#1}{#2}\selectfont}
@@ -25,6 +36,7 @@
 \renewcommand{\deg}{$^\circ$}
 
 \newcommand{\eighth}{\nicefrac{1}{8} \,}
+\newcommand{\sixth}{\nicefrac{1}{6} \,}
 \newcommand{\quarter}{\nicefrac{1}{4} \,}
 \newcommand{\third}{\nicefrac{1}{3} \,}
 \newcommand{\threeeights}{\nicefrac{3}{8} \,}
@@ -32,6 +44,7 @@
 \newcommand{\twothirds}{\nicefrac{2}{3} \,}
 \newcommand{\threequarters}{\nicefrac{3}{4} \,}
 \newcommand{\threehalves}{\nicefrac{3}{2} \,}
+\newcommand{\seveneights}{\nicefrac{7}{8}}
 
 \makeatletter
 \renewcommand*\l@subsubsection{\@dottedtocline{3}{3em}{0em}}
@@ -538,6 +551,33 @@ To make the filling, squeeze as much excess water from the spinach as humanly po
 
 Roll out crusts for two pies. Divide the spinach and cheddar mixture between each crust and bake for 60 minutes.
 
+\newpage
+\recipe{Zucchini Pancakes (Mucver)}
+
+\ingredients{3 medium zucchini (about 1 pound), shredded;
+Salt;
+freshly ground black pepper;
+3 large eggs, beaten;
+\half cup all-purpose flour;
+1 tablespoon extra virgin olive oil;
+1 cup crumbled feta cheese;
+3 scallions, finely chopped;
+\third cup finely chopped dill;
+1 teaspoon baking powder;
+4 to 6 tablespoons vegetable oil, more as needed;
+\twothirds cup plain yogurt;
+2 cloves garlic, finely chopped;
+\half teaspoon salt.}
+
+Preheat oven to 250\deg F. Place zucchini in a colander over a bowl, and mix with \half teaspoon salt. Allow to drain for five minutes. Transfer to a cloth kitchen towel, and squeeze hard to extract as much moisture as possible. Squeeze a second time; volume will shrink to about half the original.
+
+In a large mixing bowl, combine zucchini and eggs. Using a fork, mix well. Add flour, \half teaspoon salt, olive oil, feta, scallions, dill and \half teaspoon black pepper. Mix well, add baking powder, and mix again.
+
+Place a cast iron skillet or other heavy skillet over medium heat. Add 2 tablespoons vegetable oil and heat until shimmering. Place heaping tablespoons of zucchini batter in pan several inches apart, allowing room to spread. Flatten them with a spatula if necessary; pancakes should be about \threeeights inch thick and about 3 inches in diameter. Fry until golden on one side, then turn and fry again until golden on other side. Repeat once or twice, frying about 5 to 6 minutes total, so pancakes get quite crisp. Transfer to a plate lined with paper towels, and keep warm in oven. Continue frying remaining batter, adding more oil to pan as needed. Serve hot.
+
+For yogurt sauce: In a small bowl, combine yogurt, garlic and salt. Mix well, and serve on the side or on pancakes.
+
+Source: Aytekin Yar from NYT Cooking
 
 \chapter{Soups, Stews and Gumbos}
 
@@ -804,7 +844,7 @@ Source: Leon E. Soniat, Jr. from La Bouche Creole.
 %\hyperref[TOC]{Table of Contents}
 \newpage
 \recipe{Leftover-Turkey Gumbo}
-
+\label{TurkeyGumbo}
 \ingredients{Leftover turkey carcass with enough leg and thigh meat to make 3 to 4 cups cubed -- a smoked turkey is best.\\
 \\
 \textsc{Turkey Bone Broth --}
@@ -840,21 +880,21 @@ Place the browned carcass pieces in a large stockpot. Scrape all the browned bit
 
 Bring to a boil, then reduce the heat so that the broth is at a bare simmer. Cook for at least 2 hours and up to overnight. If simmering for an extended time, partially or fully cover the pot. 
 
-Strain the broth through a large colander and discard the solids. Refrigerate until the fat has solidified and can be easily removed. Should yield 3 quarts of stock.  If yield is less that 3 quarts add water to make up the difference. Extra broth can be frozen and used for another purpose.
+Strain the broth through a large colander and discard the solids. Refrigerate until the fat has solidified and can be easily removed. Should yield 3 quarts of stock.  The gumbo uses 1\half to 2 quarts of stock. The extra stock can be frozen and used for another purpose.
 
-To make the gumbo, chop and have ready the onions, peppers, celery and garlic. While preparing the vegetables, heat 3 quarts of bone broth in a large saucepan. 
+To make the gumbo, chop and have ready the onions, peppers, celery and garlic. While preparing the vegetables, heat 2 quarts of bone broth in a large saucepan. 
 
 In a heavy skillet brown the sausage then drain on paper towels. When the sausage has cooled, cut the rounds into quarters.
 
-In an 8 cup glass measuring cup combine the flour and the oil.  Using the recipe given elsewhere in these notes, make a very \hyperref[BrownRoux]{dark roux} using the microwave oven. When roux is a deep chocolate color, add the celery, onions, bell pepper, garlic and thyme to the measuring cup, stir until blended, and cook in the roux until the onion is tender. 
+In an 8 cup glass measuring cup combine the flour and the oil.  Using the recipe given elsewhere in these notes, make a very \hyperref[BrownRoux]{dark roux} using the microwave oven. When roux is a deep chocolate color, add the celery, onions, bell pepper, garlic and thyme to the measuring cup, stir until blended, and cook in the roux until the onion is tender. If any oil as risen to the top, pour this off.
 
-Transfer roux to a large cast-iron Dutch oven. Very carefully add hot broth to the roux stirring vigorously until roux is smooth and thin. Add Kitchen Bouquet to achieve desired color. Bring to a boil then reduce the heat to medium-low and simmer uncovered for 45 minutes. Add the reserved turkey meat and sausage and simmer for 20 minutes.
+Transfer roux to a large cast-iron Dutch oven. Very carefully add 6 cups of the hot broth to the roux stirring vigorously until roux is smooth and thin. Add Kitchen Bouquet to achieve desired color. Bring to a boil then reduce the heat to medium-low and simmer uncovered for 45 minutes. Add the reserved turkey meat and sausage to the gumbo.  If the gumbo is too thick then add up to 2 additional cups of hot stock to thin it. Simmer for 20 minutes.
 
 Season to taste with salt, pepper and cayenne; let simmer another 10 minutes. Check the seasoning and adjust if needed.
 
-Place a mound of cooked rice in each soup bowl, surround with the gumbo, and sprinkle with parsley and scallions.
+Place a mound of cooked rice in each soup bowl, surround with the gumbo, and sprinkle with parsley and green onions.
 
-Source: http://illinoistimes.com/article-16457-turkey-bone-gumbo.html
+Source: Modified from a recipe by Pableaux Johnson found at \url{http://illinoistimes.com/article-16457-turkey-bone-gumbo.html}.
 
 %\hyperref[TOC]{Table of Contents}
 \newpage
@@ -874,7 +914,9 @@ Add stock to roux mixture and stir well.  It the color is not dark enough to sui
 
 
 \chapter{Fish and Seafood}
+
 \recipe{Grilled Pickled Shrimp}
+\label{GrilledPickledShrimp}
 
 \ingredients{1 to 1\half pound shrimp;
 \twothirds cup of shrimp stock made from shrimp shells;
@@ -906,6 +948,36 @@ Source: Cheryl Alters Jamison and Bill Jamison from Texas Home Cooking.
 I like to serve these shrimp on top of yellow rice.  I strain the capers and onions from the marinade and add them the rice with a little of the marinade for dressing.  This recipe is ideal for entertaining because it requires very little last minute preparation.
 
 \newpage
+
+\recipe{Crispy Coconut-Crusted Fish Fingers}
+\label{CoconutFishFingers}
+\ingredients{\\
+\\
+\textsc{Dipping Sauce -- }\third cup apricot preserves; 1 tablespoon apple cider vinegar; 1 teaspoon peeled and grated fresh ginger; \quarter teaspoon lemon or lime zest, finely grated (optional), \eighth teaspoon chipotle chile powder (optional); 1 whole scallion, thinly sliced; 1 to 2 teaspoons of sambal oelek.\\
+\\
+\textsc{Fish Fingers --} 10 to 12 ounces cod or keta salmon fillets, pin bones and skin removed; \half cup panko breadcrumbs; \half cup shredded unsweetened coconut; 1 large egg beaten with 1 tablespoon water; all-purpose flour, salt and pepper, neutral oil for pan frying.
+}
+
+For dipping sauce, in a small sauce pan over medium-high heat, combine apricot preserves,  vinegar, ginger, and \quarter cup of water. Bring to a boil then reduce the heat to low and simmer until slightly reduced, 1 to 2 minutes. Stir in the scallion and sambal then season with salt to taste. Transfer the sauce to a small serving bowl and reserve.
+
+For the fish fingers, begin by patting the fish dry with paper towels and cutting it into 1-inch wide strips. Sprinkle the fish with salt and let it sit for a few minutes while you prepare the coating.
+
+Chose three shallow bowls and set up a three bowl dredging system. Put flour in the first bowl and egg/water mixture in the second bowl. In the third bowl, combine the panko and coconut and then season the mixture with salt and pepper.
+
+Rinse the fish fingers to remove the excess salt and then dry them well with paper towels. One at a time, coat the fish in flour, tapping off any excess, then dip in the egg wash. Finally, add the fish to the panko mixture and turn to coat the finger, pressing down so that the coating adheres to the fish.  Place the coated fish finger on a plate and then repeat the coating process with the remaining fish.
+
+Add \half inch of oil to a medium skillet and place on medium-high heat.  When the oil reaches 400\deg F, add the fish fingers (in batches if necessary) and fry, turning once or twice until golden.  This should take 2 or 3 minutes per side. Drain on paper towels and sprinkle lightly with salt.
+
+Transfer fried fish to a platter and serve immediately accompanied with the dipping sauce.
+
+Serves: 2
+
+Source: Grace Parisi of Sika Salmon Shares
+
+
+
+\newpage
+
 \recipe{Catfish Courtbouillon}
 
 \ingredients{\half pound shrimp;
@@ -938,7 +1010,7 @@ Add fish and simmer for 10 minutes or so until fish flakes when tested with a fo
 
 %\hyperref[TOC]{Table of Contents}
 \newpage
-\recipe{Catfish Pecan with Lemon Thyme Pecan Butter}
+\recipe{Catfish Pecan with Lemon Thyme Butter}
 
 
 \ingredients{3 cups (10 ounces) pecan halves;
@@ -1213,7 +1285,7 @@ salt and pepper. Reheat juices over low heat.
 
 When chicken has rested, carve off wings and leg/thigh then separate
 the leg and thigh. Remove breast halves each in one piece then
-slice across from keel side to side side. Arrange  meat on a plater.
+slice across from keel side to side side. Arrange  meat on a platter.
 
 Pour some the heated juice over the meat and reserve some juice to serve on the side.
 
@@ -1430,10 +1502,10 @@ Source: Melissa Clark from the NYT
 \recipe{Roasted Spatchcocked Chicken}
 
 \ingredients{3 to 4 pound whole chicken;
-2 tablespoons pure olive oil;
-2 tablespoons unsalted butter;
 1 tablespoons kosher salt;
 \half tablespoon fresh ground black pepper;
+2 tablespoons pure olive oil;
+2 tablespoons unsalted butter;
 juice of one lemon.}
 
 Preheat oven to 400\deg F. 
@@ -1442,7 +1514,7 @@ To spatchcock chicken first remove the back bone by cutting down both sides of t
 
 Mix the salt and pepper together in a small bowl. Carefully dry the chicken with paper towels and then heavily season both sides with the salt and pepper mix.
 
-Heat a large cast-iron skillet over high heat. When hot Add olive oil and then butter. After the butter stops foaming, add chicken to the skillet skin-side down. Let the chicken skin brown without moving the chicken for approximately 3 minutes. When the chicken is brown, carefully turn the chicken over. Avoid breaking the skin while turning the chicken. Transfer the skillet with the chicken to the oven.
+Heat a large cast-iron skillet over high heat. When hot add olive oil and then butter. After the butter stops foaming, add chicken to the skillet skin-side down. Let the chicken skin brown without moving the chicken for approximately 3 minutes. When the chicken is brown, carefully turn the chicken over. Avoid breaking the skin while turning the chicken. Transfer the skillet with the chicken to the oven.
 
 Roast chicken until until an instant-read thermometer inserted into the thickest part reaches 165 \deg F. Transfer chicken to a cutting board, cover loosely with foil, and let stand 10 minutes.
 
@@ -1471,7 +1543,11 @@ Kosher salt;\\
 \\
 \textsc{Acompaniments --}
 yellow prepared mustard;
-planked dill pickles;\\
+planked dill pickles;
+OR
+kimchi;
+fresh cabbage, shredded;
+mayonnaise;\\
 \\
 \textsc{Buns --}
 4 \hyperref[HamburgerBuns]{homemade hamburger buns};
@@ -1732,6 +1808,8 @@ Remove from the heat.
 Stir in peas, Parmesan, fresh basil, lemon zest, heavy cream, and lemon juice. 
 Season the orzo with salt and pepper, to taste, and serve.
 
+Source: Melissa d'Arabian 
+
 \newpage
 \recipe{Marinara}
 
@@ -1846,21 +1924,25 @@ Depressurize cooker, then season the sauce to taste with extra-virgin olive oil 
 Source: Modernist Cuisine at Home.
 
 \recipe{Basic Pizza}
-
+\label{BasicPizza}
 \equilpment{pizza steel; pizza peal}
 
-\ingredients{1 ball, approximately 200 grams, Neapolitan Pizza Dough; \half cup Pizza Sauce; 2 ounces fresh mozzarella; 1\third cup shredded low-moister whole-milk mozzarella; 2 tablespoons grated hard cheese; 2 teaspoons Mediterranean oregano, Antico Caputo brand 00 wheat flour, extra virgin olive oil or basil oil}
-% Desert
+\ingredients{1 ball, approximately 200 grams, Neapolitan Pizza Dough; \half cup Pizza Sauce; 2 ounces fresh mozzarella; 1\third cup shredded low-moister whole-milk mozzarella; 2 tablespoons grated hard cheese; 2 teaspoons Mediterranean oregano, wheat flour or course ground corn meal for peal, extra virgin olive oil or basil oil (optional)}
 
+Place a oven rack in the middle of the oven with no rack above it.  Place the pizza steel on the rack and then set oven to 550\deg F. After the oven heats to 550\deg F preheat the oven and steel for at least one hour.
+
+While the steel heats, press as much moister as possible from the fresh mozzarella by wrapping it with a clean cloth or paper towel and placing a brick, can or other heavy object on top of it and leaving it to press for a while.
+
+\newpage
 \recipe{Basil Oil}
-
+\label{BasilOil}
 \equilpment{immersion blender}
 
 \ingredients{\half cup extra virgin olive oil; 10 to 15 large fresh basil leaves, zest and juice from \half lemon, salt, freshly ground black pepper}
 
-Combine all the ingredients except the salt an pepper in the container of the immersion blender.  Blend until completely liquified then season to taste with salt and pepper. Transfer to a squeeze bottle for use. Keeps in the refrigerator for several weeks.
+Combine all the ingredients except the salt an pepper in the container of an immersion blender.  Blend until completely liquefied then season to taste with salt and pepper. Transfer to a squeeze bottle for use. Keeps in the refrigerator for several weeks.
 
-\newpage
+
 \recipe{Paprika Oil}
 
 \ingredients{\third cup extra-virgin olive oil;
@@ -1882,10 +1964,9 @@ Heat olive oil in a small skillet over the lowest heat on your smallest burner. 
 2/3 cup buttermilk;
 1 unbaked 9-inch pastry shell}
 
-\textsc{This pie was the winner of the first-ever Oxford, MS Mid-Town
+\textsc{This pie was the winner of the first-ever Oxford, Mississippi Mid-Town
 Farmers' Market pie contest. The winning cook, Ms. Izetta
 Barrington, submitted this recipe for her pie.}
-
 
 In mixing bowl combine sugar and flour.
 Add eggs and buttermilk, stirring until blended.
@@ -2035,7 +2116,7 @@ sugar if desired.
 ;
 2 cups graham cracker crumbs;
 \half cup nuts, chopped;
-1 cup shredded cocoanut;
+1 cup shredded coconut;
 ;
 \half cup butter;
 2 Tablespoons milk;
@@ -2046,7 +2127,7 @@ sugar if desired.
 2 teaspoons butter;
 4 squares semi sweet chocolate, melted}
 
-Combine first five ingredients in a saucepan, mix and then heat until slightly thick. To this add the graham cracker crumbs, nuts and cocoanut.
+Combine first five ingredients in a saucepan, mix and then heat until slightly thick. To this add the graham cracker crumbs, nuts and coconut.
 Mix well and pack in a pan and chill in refrigerator until cool.
 
 Make a second layer by combining second \half cup of butter, milk, 2 teaspoons of vanilla extract, vanilla pudding mix. Spread on first layer then return to refrigerator until chilled. Melt chocolate and butter together, mix and pour over second layer then chill until firm.
@@ -2236,7 +2317,7 @@ For preserves leave out vinegar and spices and add water to replace the vinegar.
 6\half cups sugar;
 2 cups apple cider vinegar;
 \quarter teaspoon salt;
-2 bottles Certo liquid pectin;
+2 bottles Certo brand liquid pectin;
 green or red liquid food coloring.}
 
 Boil bell peppers and hot peppers until tender then mash the pulp and strain it through a jelly bag and reserve liquid. 
@@ -2296,19 +2377,20 @@ Cook until brown and done.  Makes around 10 biscuits.
 
 \newpage
 \recipe{Southern Cornbread Sticks}
+\label{cornbread}    
 
 \ingredients{\\
 \textsc{Self-Rising White Cornmeal Mix} 
 1\half cups regular white cornmeal;
-6 Tablespoons all-purpose flour;
-2 tablespoons baking powder
-1 teaspoon granulated salt\\
+6 tablespoons all-purpose flour;
+2 tablespoons baking powder;
+1 teaspoon granulated salt.\\
 \\
 \textsc{Cornbread Batter}
 1 egg, beaten;
 1\threequarters cups buttermilk;
 \quarter cup melted Crisco shortening;
-2 cups Self-Rising White Cornmeal Mix}
+2 cups Self-Rising White Cornmeal Mix.}
 
 
 Preheat oven to 450\deg F. Grease two cast iron cornstick pans very well with room 
@@ -2407,7 +2489,7 @@ add 3 cups of raisins or other dried fruit if desired.
 
 \newpage
 \recipe{Yogurt}
-\ingredients{5 cups 1 percent milk; \third cup nonfat dry milk; one package of yogurt starter or \third cup yogurt reserved from previous batch.}
+\ingredients{6 cups 1 percent milk; \third cup nonfat dry milk; one package of yogurt starter or \third cup yogurt reserved from previous batch.}
 
 Starting with milk from the refrigerator, microwave the milk in an 8 cup glass measuring cup for 10 to 12 minutes until it is 180\deg F. 
 Remove from microwave and whisk in dry milk.
@@ -2416,8 +2498,26 @@ Cover the measuring cup with a dishtowel and leave to cool at room temperature f
 
 \newpage
 
-\recipe{Black Bean and Tofu Scramble - To Include}
-\textsc{To include}
+\recipe{Black Bean Tofu Hash}
+\ingredients{1 tablespoon extra-virgin olive oil;
+1 clove garlic, minced;
+16-ounce box extra-firm tofu, grained and gently pressed;
+1 tablespoon chili powder;
+\half teaspoon table salt;
+\quarter teaspoon ground black pepper;
+2 tablespoons water;
+15-ounce can black beans, drained;
+\half cup chopped fresh  cilantro.}
+
+\textsc{For a quick and easy breakfast serve with sliced avocado, sour cream, and salsa or \hyperref[RancheroSauce]{Ranchero sauce}.}
+
+Heat the olive oil in a large skillet over medium heat.  When the oil begins to ripple add the garlic and cook until lightly browned, around 30 seconds. Crumble in the tofu and sprinkle with the chili powder, cumin, salt and pepper. Saut\'{e} for 2 to 3 minutes.  Add water, stirring to allow the tofu to absorb the seasonings and water. Stir in the black beans and saut\'{e} for 2 or 3 minutes more. Add the cilantro and adjust the seasonings to taste.
+
+Makes 4 servings.
+
+Source: Adapted from a recipe in Always Hungry? by David Ludwig
+
+
 
 
 
@@ -2447,6 +2547,33 @@ Begin by making red chile powder from the chile pods. Wash the pods to remove an
 Saut\'{e} the garlic in olive oil for a minute or so then blend in flour with a  wooden spoon. Cook flour long enough to remove the raw taste but do not brown. When flour is cooked add the reserved \half cup of chili powder and blend in.  Blend in stock or water and cook to desired consistency. Add salt to taste.
 
 \newpage
+
+\recipe{Ranchero Sauce}
+\label{RancheroSauce}
+\ingredients{1 yellow bell pepper, cored and seeded;
+1 pablano pepper, stemmed and seeded;
+2 to 4 jalape\~{n}os, stemmed and seeded;
+1 large clove garlic;
+1 large onion, cut into large chunks;
+\quarter cup extra virgin olive oil;
+1 teaspoon salt;
+\half teaspoon ground black pepper;
+1 tablespoon dried Mexican oregano;
+\half teaspoon New Mexican red chile powder;
+1 4-ounce can mild green chiles;
+2 14.5-ounce cans diced fire-roasted tomatoes;
+cayenne pepper as needed (optional).}
+
+Place the bell pepper, pablano pepper, jalape\~{n}os, garlic and onions is a food processor and process until finely minced.
+
+Heat the oil in a deep skillet over medium heat.  Add the pepper and onion mixture, the salt, black pepper, oregano and powdered chili. Saut\'{e} until onion is soft, about 5 minutes. Add the green chiles and tomatoes. Reduce the heat to medium-low and simmer for 10 to 15 minutes. Taste for heat and add cayenne pepper a pinch at at time as needed to achieve your desired heat level.
+
+Blend with an immersion blender until the sauce is still a bit chunky but well combined then simmer for 5 minutes more. 
+
+Makes 4\half cups.
+
+Source: Adapted from a recipe in Always Hungry? by David Ludwig
+
 \recipe{Steaks with Green Chilies and Mushrooms}
 \ingredients{1 medium onion finely chopped;
 2 tablespoon olive oil;
@@ -2471,8 +2598,75 @@ From the Pink Adobe restaurant in Santa Fe, New Mexico.
 
 \newpage
 
-\recipe{Green Chili Stew - To Include}
-\textsc{To include}
+\recipe{Pink Adobe's Green Chili Stew}
+
+\ingredients{2 tablespoons olive oil;
+    2 pounds boneless pork shoulder cut into 1-inch cubes;
+    \half cup chopped yellow onion;
+    2 clove garlic, minced;
+    \quarter cup all-purpose flour;
+    2 cups chopped tomatoes (peeled, fresh);
+    2 cups chopped green chilies (roasted, peeled and chopped fresh hatch chilies);
+    1 jalapeno pepper, chopped;
+    1 teaspoon salt;
+    \half teaspoon freshly ground black pepper;
+    \half teaspoon granulated sugar;
+    1 cup chicken stock.}
+
+Heat olive oil in 4-quart Dutch oven with cover. Add pork and cook until lightly browned. Add onion and garlic and stir with meat. Add flour and stir 1-2 minutes.Add tomatoes, green chilies, jalapeno , salt, pepper and sugar. Mix to incorporate. Add broth. Lower heat. Cover pot and simmer for 1-1\half hours until meat is tender. Serve with flour tortillas.
+
+Yields: 6 servings
+
+From the Pink Adobe restaurant in Santa Fe, New Mexico. 
+
+\newpage
+    
+\recipe{Chicken Enchiladas with Sour Cream}
+
+\ingredients{2 whole chicken breasts;
+2 cups water;
+1 teaspoon salt;
+1 small carrot, chopped coarse or whole;
+1 small onion, quartered;
+2 sprigs parsley;
+1 stalk celery, quartered;
+2 cups grated cheddar cheese;
+1 pint sour cream;
+4 tablespoons olive oil;
+1 clove garlic, chopped;
+1 16-oz can chopped green chiles (I had to use four 4 oz. cans of chopped green chiles, which got a little pricey they were Ortega brand, Anaheim chiles);
+5 medium ripe tomatoes, peeled and chopped;
+2 medium onions, chopped fine;
+\half teaspoon dried oregano;
+\half teaspoon salt;
+1 cup chicken broth (from poaching);
+Canola oil for frying;
+12 corn tortillas (the small taco kind).}
+
+To poach chicken: Put chicken in a large pot and cover with water. Bring water to a boil and add all other ingredients. Cover pot and simmer for about 45 minutes; chicken should be cooked through (meat will look white and have a flakey texture). Take off heat and let chicken cool in broth.
+
+Meanwhile, peel tomatoes: This is actually very easy, as long as you don't try to do it with a knife. Fill a large pot with water and bring it to a boil. Once it's boiling, add the tomatoes, whole. Cook for about 5 minutes, until skins start to peel off. Let the tomatoes cool in the water; when you remove them, you should be able to just pull the skins off with your hands. After peeling, chop roughly.
+
+Meanwhile meanwhile (while the water is boiling for the tomatoes and the chicken is poaching), prep other items (this is when I grated the cheese, chopped the garlic and onions, and opened my cans of chiles).
+
+Now back to the chicken: Strain chicken and vegetables, reserving the broth. ``Shred'' the chicken, pulling it apart with the grain into relatively small flakes of meat (this will make sense once you have the poached chicken). Mix chicken with half (1 cup) of the grated cheese and all the sour cream to the shredded chicken and mix thoroughly. Set aside.
+  
+Around now would be a good time to preheat the oven to 350\deg F.
+  
+
+Prepare green chile sauce: heat olive oil in a medium pot. Add garlic and sauté until golden. Add chiles, tomatoes, onions, oregano, and salt. Add broth and cook over low heat until liquid is reduced by half (about 15-20 minutes). Set aside.
+
+Okay, enchilada assembly time! This is where it gets fun. Set up as assembly line with a frying pan on the stove, the bowl of chicken mix, the green chile sauce, a flat surface to work on (I used a cutting board with paper towels covering it to absorb the oil), and the pan the enchiladas are eventually going to land in.
+
+a.    Then heat the oil in a frying pan. I worked 2 tortillas at a time -- you could do more if your cutting board is bigger than mine. Fry each tortilla individually, just for a few seconds on each side until it puffs slightly. Remove with tongs or a spatula and let drain on the paper towel covered cutting board (turn it over at some point so both sides can drain).
+
+b.    Divide the chicken mix in half, and then divide each half into six parts, roughly. Spoon 1/12 of chicken mixture onto tortilla and top with 2 tbsp. of green chile sauce.
+
+c.    Roll the enchilada. For me, this ended up being more like folding it twice.
+
+d.    Place ``rolled'' enchilada into 9 inch by 13 inch pan; fill pan so enchiladas are snug.
+
+When all enchiladas are assembled, cover with remaining sauce and cheese and bake for 15 minutes (uncovered, until thoroughly heated). The Pink Adobe recommends serving the enchiladas with chopped lettuce and Corona Extra beer. A cookbook after my own heart.
 
 \newpage
 \recipe{Sopaipillas}
@@ -2497,6 +2691,18 @@ Sift dry ingredients together then work in shortening and lukewarm water to make
 
 \chapter{Condiments and Components}
 
+\recipe{Wine Vinegar}
+\label{WineVinegar}
+\equilpment{2 quart-size wide-mouth mason jars with rings; cheese cloth.}
+\ingredients{750 ml bottle of ``over the hill'' red wine; \half teaspoon 3\% hydrogen peroxide solution; ; 750 ml purified water; 250 ml fluid ounces organic apple cider vinegar with mother.}
+
+Add the hydrogen peroxide solution to the bottle of wine and give it a good shake. Wait for 10 minutes before proceeding with the rest of the recipe.  This step is necessary to neutralize the sulfides in the wine.
+
+Pour half of the wine in each of the mason jars and then add an amount of purified water equal to the amount of wine in each bottle.  Each jar should contain a mixture of 375ml of wine with 375 ml of water. Shake the bottle of cider vinegar to get the mother into solution then add 125 ml of vinegar to each jar.  Stir the contents of the jars and then cover the jars with cheese cloth.  The jar rings can be used to hold the cheese cloth in place.
+
+Put the jars in a dark cupboard. Every week or two give the jars a shake and check the progress of the vinegar. The vinegar is done when almost all of the alcohol has been converted to acetic acid. This will take several months.
+
+\newpage
 \recipe{My Mother's Mayonnaise}
 
 \ingredients{1 whole egg at room temperature;
@@ -2512,7 +2718,6 @@ Install the balloon whisk on a stand mixer or put the steel blade in a food proc
 
 With mixer or processor running, add the oil very slowly at first until the mayonnaise begins to emulsify and then add in a slow stream until all the oil is incorporated.
 
-\newpage
 \recipe{My Mayonnaise}
 \label{MyMayonnaise}
 
@@ -2774,11 +2979,11 @@ Place bag with pork mixture in freezer for around 30 minutes then grind mixture 
 
 Add 2 ounces of water and half of the ground meat to the mixer bowl. With the mixer's paddle attachment, mix the sausage on medium-low speed until homogeneous and tacky, about 2 minutes. Remove mixed sausage and repeat with an additional 2 ounces of water and the remaining ground meat. Load sausage into stuffer. 
 
-Place open end of casing on the end of the kitchen faucet and inflate with water until fully inflated. Drain and place on medium stuffer tube. Tie a knot in the end of the casing and evenly fill with sausage. Stop before the end of the casing and tie off with another knot.  Divide into links and twist to separate. 
+Place open end of casing on the end of the kitchen faucet and inflate with water until fully inflated. Drain and place on \seveneights" (2.2 cm) diameter stuffer tube. Tie a knot in the end of the casing and evenly fill with sausage. Stop before the end of the casing and tie off with another knot.  Divide into links and twist to separate. 
 
 Makes around 16 8-inch links.
 
-Source: ``The Food Lab'' by J. Kenji L\'{o}pez-Alt.
+Source: Modified from a recipe in ``The Food Lab'' by J. Kenji L\'{o}pez-Alt.
 
 \newpage
 \recipe{Texas German Sausage}
@@ -2851,14 +3056,27 @@ $$ \SI{4.5}{\milli\meter} \approx \SI[fraction-function=\sfrac]{3/16}{inch}$$
 $$ \SI{6}{\milli\meter} \approx \SI[fraction-function=\sfrac]{1/4}{inch}$$
 $$ \SI{10}{\milli\meter} \approx \SI[fraction-function=\sfrac]{3/8}{inch}$$
 $$ \SI{16}{\milli\meter} \approx \SI[fraction-function=\sfrac]{5/8}{inch}$$
+
 \chapter{Thanksgiving}
 
-\recipe{Cranberry Orange Relish}
+\recipe{Thanksgiving Dinner}
+\ingredients{\hyperref[RoastTurkey]{Good Eats Roast Turkey};
+\hyperref[CranberryRelish]{Cranberry Orange Relish};
+\hyperref[OysterDressing]{Corn Bread Oyster Dressing};
+\hyperref[PersimmonPudding]{Persimmon Pudding};
+\hyperref[BrooklynCollards]{Brooklyn-Style Collard Greens};
+\hyperref[TurkeyGravy]{Turkey Gravy}.}
 
+\recipe{Turkey Gravy}
+\label{TurkeyGravy}
+\ingredients{unsalted butter; all-purpose flour; turkey bone broth or chicken stock; drippings from roast turkey.}
+
+\recipe{Cranberry Orange Relish}
+\label{CranberryRelish}
 \ingredients{1 medium orange;
 12 oz. package of fresh cranberries;
 1 cup sugar;
-1 cinnamon stick,}
+1 cinnamon stick.}
 
 
 Cut orange into wedges and remove seeds.
@@ -2874,7 +3092,7 @@ Serve warm or chilled.
 
 \newpage
 \recipe{Good Eats Roast Turkey}
-
+\label{RoastTurkey}
 \ingredients{14 to 16 pound fresh turkey; 2 cups kosher salt; 2 gallons \hyperref[VegetableBroth]{vegetable broth};
 1 cup light brown sugar;
 2 tablespoons black peppercorns;
@@ -2901,15 +3119,14 @@ Put the turkey in the oven with legs first if it will fit this way. Roast the tu
 
 \newpage
 \recipe{Corn Bread Oyster Dressing}
-
+\label{OysterDressing}
 \ingredients{12 tbsp. butter;
 1 large yellow onion finely chopped;
 4 celery stalks finely chopped;
 1/4 cup chopped fresh parsley;
 1 tsp. dried sage;
 1/2 tsp. dried tarragon;
-1 recipe of corn bread made with Martha White self-rising corn 
-              meal mix (white corn), crumbled;
+1 recipe of \hyperref[cornbread]{corn bread} made in a skillet, crumbled;
 2 eggs;
 Pinch cayenne;
 Salt and freshly ground black pepper;
@@ -2917,7 +3134,7 @@ Crisco;
 Chicken Stock (less than 1 cup needed);
 1 pt. to 1.5 pt. shucked Gulf oysters (3 dozen small shucked oysters).}
 
-Make corn bread in a cast iron skillet using melted Crisco in place of oil.
+Make \hyperref[cornbread]{corn bread} in a cast iron skillet.
 Grease skillet generously with Crisco and preheat in oven before adding 
 batter so that the corn bread develops a thick brown crisp crust. 
 Cool corn bread and then crumble. Two cups of corn meal mix made into
@@ -2962,7 +3179,7 @@ I made a single recipe for Thanksgiving 2014. I used my black high sided Le Creu
 
 \newpage
 \recipe{Persimmon Pudding}
-
+\label{PersimmonPudding}
 \ingredients{2 cup persimmon pulp $\approx$ pulp from 5 or 6 Japanese-hybrid  persimmons;
 3 eggs beaten;
 1\half cups sugar;
@@ -2995,6 +3212,53 @@ Cover the pot and then steam the pudding until it has a cake-pudding
 texture.  This step will take around 3 hours.
 
 Remove pudding and cool in refrigerator.
+
+\chapter{Christmas}
+
+\recipe{Prime Rib Roast}
+
+\ingredients{Prime-grade prime rib roast, trimmed and tied (2-3 servings per bone); kosher salt; black pepper, freshly ground.}
+
+Buy a bone-in, prime-grade prime rib, preferably dry-aged. Season well with salt and pepper, and let it rest, uncovered, on a rack in the refrigerator for at least overnight and up to four days. 
+
+Roast in a 200\deg F oven until it hits 125\deg F at the center (around four to five hours for an average rib roast; your mileage may vary). Remove from the oven, tent lightly with aluminum foil, and let it rest at least 30 minutes and up to one and a half hours. 
+
+Ten minutes before serving, remove the foil, pour off fat from pan and place it back into an oven preheated to its highest possible setting (500-550\deg F). Roast until well browned and crisp, about 10 minutes. Carve and serve immediately. 
+
+To carve, grab bone with a clean kitchen towel and carve off bone from roast. Cut apart rib bones and carve roast into \half inch thick slices.
+
+Notes from Christmas 2021: Cooked 4 bone 8.8 pound trimmed and tied roast to serve 8 people.  The roast went in a 200\deg F oven at 12:25 PM. The internal temperature when the roast went in the oven was 42.6\deg F. At 1:45 PM the internal temperature was 59.2\deg F.   At 2:15 PM the internal temperature was 71.1\deg F.  At 4:08 PM the internal temperature was 112.5\deg F. At 4:51 PM the internal temperature was 125.2\deg F and the roast was removed from the oven and tented with foil. The internal temperature was 135.5\deg F when the roast was served at 6:10 PM.
+
+\recipe{Roast Fingerling Potatoes}
+\textsc{To be added}
+
+
+\newpage
+
+\recipe{Warm Springs Eggnog}
+
+\ingredients{6 eggs;
+6 tablespoons sugar;
+8 ounces heavy cream;
+3 to 6 ounces bourbon;
+nutmeg, freshly grated, for garnish.}
+
+\textsc{A Goggans family Christmas tradition.  This eggnog is quite thick and more of a desert than a drink.
+This recipe serves six.}
+
+Separate the eggs.
+
+Beat the egg whites to soft peaks.  Add the sugar and continue
+beating until stiff peaks form.
+
+In a separate bowl, whip cream until stiff.
+
+In another bowl, beat egg yolks lightly and add bourbon.
+
+Fold the egg white mixture, whipped cream, and egg yolk mixture
+together.
+
+Serve with a spoon in glasses garnished with grated nutmeg.
 
 
 
@@ -3088,27 +3352,93 @@ Mix two parts cream of tartar with one part baking soda.
 
 Shake all the ingredients with ice, then strain into a chilled coupe. Usually served without a garnish.
 
+\recipe{Final Ward}
+\label{FinalWard}
+\ingredients{\threequarters ounce bonded rye whiskey; \threequarters ounce green Chartreuse; \threequarters ounce Luxardo maraschino liqueur; \threequarters ounce fresh lemon juice.}
+
+Shake all the ingredients with ice, then strain into a chilled coupe. Usually served without a garnish.
+
+\recipe{Naked \& Famous}
+\label{NakedAndFamous}
+\ingredients{\threequarters ounce mezcal; \threequarters ounce yellow Chartreuse; \threequarters ounce Aperol; \threequarters ounce fresh line juice.}
+
+Shake all the ingredients with ice, then strain into a chilled coupe. Usually served without a garnish.
+
+\recipe{The Bird Is The Word No.2}
+\ingredients{\third ounce chilled water (omit if using wet ice); \threequarters ounce Grappa; \threequarters ounce Green Chartreuse; \half ounce Luxardo maraschino liqueur; \half ounce fresh lime juice; 4 drops chocolate bitters.}
+
+Shake all ingredients with ice and fine strain into a chilled glass.
+
+\recipe{Sunflower}
+\label{Sunflower}
+\ingredients{\threequarters ounce gin; \threequarters St-Germain Elderflower Liqueur; \threequarters ounce Cointreau or Grand Marnier; \threequarters ounce fresh lemon juice; lemon twist.}
+
+Shake all the liquid ingredients with ice, then strain into a chilled coupe. Garnish with a lemon twist. 
+
+\recipe{Alpine Negroni}
+\label{AlpineNegroni}
+
+\ingredients{1  ounces gin;
+\threequarters ounce Cocchi Americano;
+\threequarters ounce Suze gentian liqueur;
+\half ounce Genepi;
+\sixth ounce white creme de menthe;
+3 dashs lemon bitters;
+\half pinch salt;
+rosemary sprig.}
+
+Add the gin, Cocchi Americano, Suze, Genepi, creme de menthe, bitters and salt into a mixing glass with ice and stir for 15 to 20 seconds until well-chilled. Strain into a rocks glass over fresh ice. Garnish with a rosemary sprig. 
+
 \recipe{Aviation Cocktail}
 \label{Aviation}
 
-\ingredients{2 ounces butterfly pea gin;
+\ingredients{2 ounces \hyperref[CeruleanGin]{butterfly pea gin};
 \threequarters ounce fresh lemon juice;
 \half ounce Luxardo maraschino liqueur;
-1 teaspoon cr\'{e}me de violette. }
+1 teaspoon cr\'{e}me de violette (optional). }
 
 Shake all the ingredients with ice, then stain into a chilled coupe. Flame an orange zest strip, express over drink and then use as garnish.
 
 \recipe{Sazerac}
 \label{Sazerac}
-\ingredients{absinthe;1 \half ounces rye; \half ounce Cognac; 4 dashes Peychaud's bitters; 1 dash Angostura bitters; lemon twist,}
+\ingredients{absinthe; 1\half ounces rye; \half ounce Cognac; 4 dashes Peychaud's bitters; 1 dash Angostura bitters; lemon twist.}
 
 Rinse an Old-Fashioned glass with absinthe and dump. Stir the remaining liquid ingredients over ice, then strain into the glass. Express the lemon twist over the drink and discard.
+
+\recipe{The Smartest Man Alive}
+\label{SmartestMan}
+\ingredients{ \threequarters ounce rye whiskey;
+\threequarters ounce Suze;
+\threequarters ounce fresh lemon juice;
+\half ounce 1:1 Honey Syrup. }
+
+In a cocktail shaker, combine the rye, Suze, lemon juice and Honey Syrup. Fill the shaker with ice and shake well. Fine-strain into a chilled coupe.
+
+Variation: In a small saucepan, heat the ingredients over moderate heat until hot, then stir in 3 ounce brewed black tea. Pour into a warmed mug and garnish with a lemon wheel.
 
 \recipe{Hemingway Daiquiri}
 \label{HemingwayDaiquiri}
 \ingredients{1\half ounces aged white rum; \half ounce Luxardo maraschino liqueur; 1 ounce fresh grapefruit juice; \half ounce fresh lime juice; 1 teaspoon simple syrup; lime wedge.}
 
 Shake all liquid ingredients with ice, then strain into a chilled coupe. Garnish with the lime wedge.
+
+\recipe{Nuclear Daiquiri}
+\label{NuclearDaiquiri}
+\ingredients{1 ounce overproof rum;
+    \threequarters ounce Green Chartreuse;
+    \quarter ounce Velvet Falernum;
+    1 ounce fresh lime juice; lime wheel.}
+
+Shake all liquid ingredients with ice, then strain into a chilled Nick and Nora glass. Garnish with the lime wheel.
+
+\recipe{Flying Dutchman}
+\label{FlyingDutchman}
+\ingredients{1\half ounces genever;
+\half ounce Benedictine;
+\half ounce yellow Chartreuse;
+\half ounce lemon juice, freshly squeezed}
+
+Add the genever, Benedictine, yellow Chartreuse and lemon juice into a shaker with ice and shake until well-chilled. Strain into a chilled cocktail glass. Garnish with a lemon twist if desired.
 
 \recipe{Caipirinha}
 \label{Caipirinha}
@@ -3124,7 +3454,13 @@ Prepare lime by washing it and then cutting a thin slice off of the stem and opp
 
 Measure liquid ingredients directly into a tumbler. Stir and add ice. Express orange zest over tumbler then drop in for garnish.
 
-\newpage
+\recipe{Macuna\'{i}ma}
+\label{Macunaima}
+
+\ingredients{1\twothirds ounces Cacha\c{c}a; \twothirds ounce lemon or lime juice; \half ounce rich sugar syrup; \quarter ounce Fernet Branca.}
+
+Shake all ingredients with ice and strain into a chilled glass.
+
 \recipe{Premade Martini}
 \label{Martini}
 
@@ -3142,20 +3478,84 @@ If there is ice in the bottle when you remove it from the freezer then give it a
 
 \recipe{Premade Manhattan}
 
-\ingredients{11\quarter oz rye; 5 oz sweet vermouth; \half oz Angostura bitters; 7\half ounces water.}
+\ingredients{11\quarter ounces rye; 5 ounces sweet vermouth; \half ounce Angostura bitters; 7\half ounces water.}
 
 Using a funnel combine all ingredients in a glass bottle. Shake to combine ingredients and then seal the bottle and store in the freezer overnight.
 
 When mixture is fully chilled, pour 4\half ounces into a cocktail glass and garnish with a lemon twist.  
 
+\recipe{Tuxedo No. 2}
 
+\ingredients{2 ounces gin; \threequarters ounce dry vermouth; \quarter ounce Luxardo maraschino liqueur; 2 dashes absinthe; 1 dash orange bitters (optional); lemon twist; Luxardo maraschino cherry (optional).
+}
+
+Add all liquid ingredients to a mixing glass with ice. Stir until cold (10 to 30 seconds depending on ice size). Strain into a stemmed cocktail glass, express the oils of a lemon peel over the top and garnish with the peel and, if desired, a cocktail cherry.
+
+\recipe{Gin Blossom Martini}
+
+\ingredients{1\half ounces gin; 1\half ounces bianco vermouth or Lillet blanc or Cocchi Americano; \threequarters ounce apricot eau-de-vie;  2 dashes orange bitters}
+
+Stir all ingredients with ice and strain into a chilled glass.  Garnish with a lemon twist if desired.
+
+
+\recipe{Southern Slipper}
+\ingredients{1\half ounce \hyperref[CantaloupeLiqueur]{Cantaloupe Liqueur};
+1 ounce Cura\c{c}ao or Triple Sec;
+\half ounce Luxardo maraschino liqueur;
+1 ounce fresh lemon juice;
+Luxardo maraschino cherry.}
+
+Shake all liquid ingredients with ice, then stain into a chilled coupe or Nick and Nora glass. Garnish by dropping a Luxardo maraschino cherry in the glass and letting it sink to the bottom.
+
+\recipe{Cantaloupe Sour}
+\ingredients{2 ounces \hyperref[CantaloupeLiqueur]{Cantaloupe Liqueur};
+1 ounce fresh lemon juice;
+1 egg white;
+orange bitters.}
+
+Combine cantaloupe liqueur, lemon juice and egg white in a shaker and dry shake. Add ice and shake again. Double strain into a chilled Nick and Nora glass. Top with a few drops of bitters.  For an attractive effect, use a toothpick to drag a line from the bitters drops.
+
+
+
+
+\newpage
 
 \recipe{Grapefruit Wine}
 \label{GrapefruitWine}
 
 \ingredients{1 bottle of dry French ros\'e; 1 pink grapefruit; simple syrup to taste.}
 
-Juice the grapefruit and mix the juice with the wine.  Add a splash of simple syrup to taste, or not. Serve over ice, or with frozen supremed grapefruit segments to keep the drink icy cold.
+Juice the grapefruit and mix the juice with the wine.  Add a splash of simple syrup to taste, or not. Serve over ice, or with frozen supremed grapefruit segments to keep the drink cold.
+
+
+
+
+\recipe{Original Chatham Artillery Punch}
+
+\equilpment{punch bowl; alcoholic friends.}
+
+\ingredients{8 lemons;
+1 pound superfine sugar;
+750-milliliter bottle bourbon or rye;
+750-milliliter bottle Cognac;
+750-milliliter bottle dark Jamaican rum;
+3 bottles Champagne or other sparkling wine;
+Nutmeg.}
+
+Squeeze and strain the lemons to make 16 ounces of juice. Peel the lemons and muddle the peels with the sugar. Let the peels and sugar sit for an hour, then muddle again. Add the lemon juice and stir until sugar has dissolved. Strain out the peels.
+
+Fill a 2- to 3-gallon punch bowl with crushed ice or ice cubes. Add the lemon-sugar mixture and the rum, the Cognac and the bourbon or rye. Stir and add the Champagne. Taste and adjust for sweetness. Grate nutmeg over the top and serve.
+
+Yield: About 25 drinks.
+
+Source: David Wondrich
+
+
+\recipe{Campari Boilermaker}
+
+\ingredients{6 ounces citrus Gose, sour or Berliner Weisse; 2 ounces Campari; orange wedge garnish.}
+
+Combine beer and Campari in a 16 ounce glass, fill with ice, and top with orange wedge squeezed over glass.
 
 \newpage
 \recipe{Cherry Liqueur}
@@ -3187,61 +3587,29 @@ the liqueur will be a beautiful dark rose color.
 Strain the liqueur into  bottles. Save the cherries to eat or use them
 to garnish deserts.
 
-\recipe{Warm Springs Egg Nog}
-
-\ingredients{6 eggs;
-6 tablespoons sugar;
-1 pint heavy cream;
-6 tablespoons bourbon;
-nutmeg for garnish.}
-
-\textsc{A Goggans family Christmas tradition.  This egg nog is quite thick and
-usually served with a spoon.  This recipe serves six.}
-
-Separate the eggs.
-
-Beat the egg whites to soft peaks.  Add the sugar and continue
-to beat until stiff.
-
-In a separate bowl, whip cream until stiff.
-
-In another bowl, beat egg yolks lightly and add bourbon.
-
-Fold the egg white mixture, whipped cream, and egg yolk mixture
-together.
-
-Serve in glasses garnished with nutmeg.
-
 \newpage
-\recipe{Original Chatham Artillery Punch}
 
-\equilpment{punchbowl; alcoholic friends.}
+\recipe{Cantaloupe Liqueur}
+\label{CantaloupeLiqueur}
 
-\ingredients{8 lemons;
-1 pound superfine sugar;
-750-milliliter bottle bourbon or rye;
-750-milliliter bottle Cognac;
-750-milliliter bottle dark Jamaican rum;
-3 bottles Champagne or other sparkling wine;
-Nutmeg.}
+\ingredients{1000 grams cantaloupe pulp, finely chopped; 500 ml  95\% ABV Neutral (Everclear); 500 ml purified water; 400 grams cane sugar.}
 
-Squeeze and strain the lemons to make 16 ounces of juice. Peel the lemons and muddle the peels with the sugar. Let the peels and sugar sit for an hour, then muddle again. Add the lemon juice and stir until sugar has dissolved. Strain out the peels.
+For this recipe you will need a 2-liter glass container with an airtight seal (two 1-quart Mason jars will also work). For the best results, use a very ripe cantaloupe and carefully remove every bit of peel before finely dicing the pulp.
 
-Fill a 2- to 3-gallon punch bowl with crushed ice or ice cubes. Add the lemon-sugar mixture and the rum, the Cognac and the bourbon or rye. Stir and add the Champagne. Taste and adjust for sweetness. Grate nutmeg over the top and serve.
+Put the cantaloupe pulp in the glass container, cover with the alcohol and then the seal container. Macerate for 30 days in a cool dark place shaking the mixture every now and then.
 
-Yield: About 25 drinks.
+After 30 days strain the cantaloupe pulp from the alcohol using a wire mesh strainer.  Press hard on the pulp to remove all the liquid and then discard the pulp. Clean the glass container and return the flavored alcohol to it. 
 
-Source: David Wondrich
+Prepare the syrup by bring the water and sugar to a boil and then reducing heat to a simmer and stirring until the sugar is completely dissolved. Cool the syrup to room temperature before adding it to flavored alcohol. Stir well to combine, seal the jar and let it rest for 1 week before proceeding.
+
+Filter the liqueur using a double layer of muslin moistened with alcohol. Filter again and returned to rinsed bottle. Seal the bottle and place it where it will not be disturbed to allow the fine particles to settle to the bottom.  When the liquid above thin layer of particles on the bottom of the bottle is very clear, rack off the clear liquid and transfer to an attractive bottle.
+
+Let the liqueur rest for 3 months before consuming.  Total time from start to consumption is around 4\half months.
 
 
-\recipe{Campari Boilermaker}
-
-\ingredients{6 ounces citrus Gose, sour or Berliner Weisse; 2 ounces Campari; orange wedge garnish.}
-
-Combine beer and Campari in a 16 ounce glass, fill with ice, and top with orange wedge squeezed over glass.
 
 \recipe{Lime Cordial}
-
+\label{limecordial}
 \ingredients{250 grams sugar;
     8 fluid ounces/240 ml hot water;
     1\half fluid ounces/45 ml fresh lime juice; 
@@ -3272,7 +3640,446 @@ Add water, tea, ginger, turmeric, anise, cardamon, cinnamon and pepper to a larg
 
 Yield: 6 to 8 servings
 
+\recipe{Orgeat}
+\label{orgeat}
+
+\ingredients{200 grams unsweetened almond milk;
+300 grams table sugar;
+3.5 grams Cognac;
+4.5 grams amaretto;
+750 milligrams rose or orange blossom water.
+}
+
+Combine the almond milk and sugar in a saucepan over medium-low heat and cook, stirring occasionally, until the sugar has dissolved. Remove from the heat and stir in the Cognac, amaretto, and rose water. Let cool to room temperature, then transfer to a storage container and refrigerate until ready to use, up to 2 weeks.
+
+\chapter{Gin}
+
+\recipe{Making Gin}
+
+\textsc{Making neutral spirits from scratch that is neutral enough to use in gin making requires a column still and a carbon filtering apparatus. Because of this most people are better off purchasing neutral spirits from the liquor store. For this recipe you can use either bottom shelf 80 proof vodka or Everclear diluted to 40\% ABV. I don't crush the juniper berries in this recipe for two reasons. First, using crushed berries gives inconsistent results because is it difficult to crush uniformly and consistently. Second, I find that crushed berries release harsh flavors that whole berries do not. For similar reasons I don't macerate the botanicals in the spirits before distilling. I put the fresh citrus zest in the gin basket because I like the fresh citrus flavor that results better than the marmalade like flavor that results from putting the zest into the still with the spirits.  Discarding the first 25 ml of distillate is done to control the amount of juniper and citrus oil in the final product.  Without this step the gin is likely to louch (turn cloudy) when water is added to it and have too much juniper and citrus flavor. }
+
+\recipe{Gin \#4}
+\label{GinNumber4}
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+35 grams juniper berries, whole;
+17.5 grams coriander seeds, whole; 
+3.5 grams angelica root, coarsely ground;
+0.35 grams orris root, coarsely ground;
+0.35 gram dried lemon peel;
+0.35 gram dried sweet orange peel;
+3.5 grams liquorice root, coarsely ground;
+3.5 grams cassia bark, coarsely ground.
+}
+
+Mercury Gin recipe found in comments on YouTube.
+
+\recipe{Gin \#5}
+\label{GinNumber5}
+\equilpment{Still Spirits Air-Still with gin basket, alcohol hydrometer, Thermopen MK4 instant-read thermometer.}
+
+\ingredients{
+1 liter 40\% ABV neutral spirits;
+20 grams juniper berries;
+5 grams coriander seeds; 
+1 gram angelica root, coarsely ground;
+0.2 grams cardamom seeds; 
+0.1 grams vanilla bean;
+0.5 grams fresh lemon thyme leaves;
+2 grams hazelnut pieces, lightly toasted;
+35 grams peeled and seeded ripe pear (or apple if pear is unavailable);
+2 gram fresh rose petals or 1 gram dried rose petals;
+4 grams fresh lemon or orange zest;
+0.7 grams dried bitter orange peel, coarsely ground (optional);
+\half teaspoon honey (optional).
+} 
+
+Do not crush any of the ingredients. Add all ingredients except the rose petals and orange zest to the still. For a very citrus forward gin you can use up to 8 grams of fresh citrus zest, however, you will likely have to correct the diluted gin for louching if you do.  Zest the orange or lemon with a sharp vegetable peeler and add zest strips and rose petals wrapped in cheese cloth to the gin basket.  Turn on still and after the first drip from the still at around 17 minutes collect and discard the first 25 ml of distillate to emerge. After this collect the next 425-450 ml of distillate for use in making the gin. Dilute the collected distillate with purified water to 45 \% ABV. The result should be approximately 750 ml of gin. Bottle and wait at least one week before drinking to allow flavors to stabilize.
+
+If the gin has too much juniper or citrus flavor to suit you then 
+add 45 \% ABV neutral spirits (can be made by diluting Everclear) to the gin to reduce the flavor. Similarly, to correct louching, add 45 \% ABV neutral spirits to your gin until it is clear.
+
+\recipe{Making Multiple Bottles of Gin with One Run using an Air-Still}
+
+\textsc{The maximum fill level of the Still Spirits Air-Still is 4 liters so you can scale the given recipe by 2 or 3 without exceeding the capacity of the still. For a times 2 or times 3 recipe run is it only necessary to collect and discard the first 25 ml of distillate.  When starting with 2 liters of neural spirits for a times 2 run the time to first drip from the still is 32 minutes. After the first 25 ml, collect 850-900 ml of the distillate to make the gin.}
+
+\textsc{When starting with 3 liters of neural spirits for a times 3 run, the time to first drip from the still is around 40 minutes. After the first 25 ml, collect 1,275-1,350 ml of the distillate to make the gin.}
+
+
+
+
+\newpage
+\recipe{Gin \#6}
+\label{GinNumber6}
+
+\equilpment{Still Spirits Air-Still with gin basket, alcohol hydrometer, Thermopen MK4 instant-read thermometer.}
+
+\ingredients{
+1 liter 40\% ABV neutral spirits;
+14 grams juniper berries;
+5 grams coriander seeds; 
+1 gram angelica root, coarsely ground;
+0.15 grams orris root, coarsely ground;
+0.5 grams cardamom seeds; 
+0.2 grams vanilla bean;
+0.5 grams dried thyme leaves;
+0.2 grams licorices powder;
+5 grams pecan pieces, lightly toasted;
+6 grams dried Mulberries;
+0.7 grams dried bitter orange peel, coarsely ground (optional);
+2 gram fresh rose petals or 1 gram dried rose petals;
+4 grams fresh orange or lemon zest
+} 
+
+Do not crush any of the ingredients. Add all ingredients except the rose petals and citrus zest to the still.  Zest citrus and add citrus zest strips and rose petals wrapped in cheese cloth to the gin basket.  Turn on still and after around 17 minutes collect and discard the first 25 ml of distillate to emerge. After this collect the next 450 ml of distillate for use in making the gin (this will take around 22 minutes after discarding the first distillate). Dilute the collected distillate with purified water to 45 \% ABV. The result should be approximately 750 ml of gin. Bottle and wait at least one week before drinking to allow flavors to stabilize.
+
+\recipe{Gin \#7}
+\label{GinNumber7}
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+15 grams juniper berries, whole;
+7.5 grams coriander seeds, whole; 
+1.5 grams angelica root, coarsely ground;
+0.15 grams orris root, coarsely ground;
+1.5 grams ground almonds;
+1 gram dried lemon peel;
+1.5 grams liquorice root, coarsely ground;
+1.5 grams cassia bark, coarsely ground;
+1.5 grams cubeb berries, whole;
+1.5 grams grains of paradise, whole;
+2 grams fresh lemon zest.
+}
+
+\textsc{Bombay Sapphire recipe according to an article in Wired Magazine.}
+
+\recipe{Mango Mulberry Gin}
+\label{MangoMulberryGin}
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+30 grams whole juniper berries;
+2 grams whole coriander seeds;
+0.75 grams angelica root, coarsely ground;
+7.5 grams dried mango (no added sugar);
+3 grams dried mulberries;
+1.5 grams ground almonds;
+2 pink peppercorns;
+0.2 grams vanilla bean;
+0.25 grams dried orange peel;
+0.1 grams dried lemon peel.
+}
+
+Source: Adapted from the recipe for ``Mango Mulberry Gin'' by Miss Brewbird from her YouTube channel. 
+
+\recipe{Ginger Turmeric Gin -- In Development}
+\label{GingerTumericGin}
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+15 grams juniper berries, whole;
+7.5 grams coriander seeds, whole; 
+1.5 grams angelica root, coarsely ground;
+0.5 grams fresh ginger root, unpeeled and coarsely chopped;
+0.5 grams fresh turmeric root, unpeeled and coarsely chopped;
+fresh lemongrass;
+1.5 grams liquorice root, coarsely ground;
+0.5 grams dried bitter orange peel;
+0.5 grams dried lemon peel;
+1 gram fresh orange zest;
+1 gram fresh lemon zest.}
+% 10 grams Ginger Turmeric tea;
+
+
+\recipe{Gin Extract}
+\label{GinExtract}
+
+\ingredients{35 grams whole juniper berries;
+2 grams whole coriander seeds;
+2 grams green cardamom pods;
+2 grams orris root;
+400 ml water;
+75 ml 95\% ABV neutral spirits.
+}
+
+Using an electric spice grinder, individually grind each botanical and add it to the still.  Add water to the still and then run still collecting the first 75 ml to emerge.
+Add 75 ml neutral spirits to the 75 ml collected from the still and bottle.
+
+To make gin using the gin extract, add 1 ml of extract to every 100 ml of 45\% ABV neutral spirits used.
+
+This recipe is from the Barley and Hops YouTube channel.  The botanical amounts are roughly the same as the amounts used with 1 liter of 40\% ABV neutral spirits for recipes to be made in an Air-Still.  This suggests that any of the recipes in this chapter could be used to make Gin Extract using the method described in this recipe.
+
+
+\recipe{Cerulean Gin}
+\label{CeruleanGin}
+\ingredients{750 ml Gin made with \hyperref[GinExtract]{Gin Extract}; butterfly-pea tea teabag.}
+
+Combine gin and teabag in a large glass measuring cup and cover with plastic wrap.  Let sit for around 10 minutes (gin should be quite blue) then pour into bottle. This gin turns purple when acid ingredients are added to it. Us it in a gin and tonic where it will change colors when your guest squeezes a lime into it. This gin is ideal for making an \hyperref[Aviation]{Aviation Cocktail}.
+
+\newpage
+
+ \recipe{Mulberry Gin}
+ \label{MulberryGin}
+ \ingredients{280 grams fresh ripe mulberries;
+ 500 ml of approximately 74\% ABV gin;
+ mulberry simple syrup containing approximately 50 grams of sugar.}
+ 
+ In northern Mississippi mulberries usually ripen during the last weeks of May so this is the time to make this gin. Place fresh mulberries and undiluted gin in a 1 quart Mason jar. Place the jar in a dark pantry for a couple of months. 
+ 
+ While fresh mulberries are available, make a one-to-one simple syrup adding fresh mulberries while the syrup is hot. When cool, strain the syrup to remove the mulberries and place strained syrup in the refrigerator until needed to sweeten and proof down the gin.
+ 
+ After a couple of months, strain the gin off of the mulberries pressing to extract as much gin and mulberry juice as possible.  Measure the volume of the extracted gin.  Assuming that no ethanol was lost in the maceration process, determine the volume of syrup that must be added so that the final mulberry gin is approximately 40\% ABV.  Bottle in 325 ml clear bottles. Makes around 1 liter of mulberry gin.
+
+\recipe{40\% ABV Neural Spirits}
+
+\ingredients{1,270 ml Everclear; 1,730 ml purified water.}
+
+To make 3 liters of neural spirits at 40\% ABV mix 1,270 ml of Everclear with 1,730 ml of purified water.
+
+\recipe{45\% ABV Neural Spirits}
+
+\ingredients{355 ml Everclear; 395 ml purified water.}
+
+To make 750 ml of neural spirits at 45\% ABV mix 355 ml of Everclear with 395 ml of purified water.
+
+
+\newpage 
+\recipe{Gin Recipe Idea \#1}
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+juniper berries;
+orris root;
+angelica;
+liquorice;
+coriander;
+lemon peel;
+cardamom;
+cubeb berries;
+elderflower.
+}
+
+\recipe{Gin Recipe Idea \#2}
+\ingredients{1 liter 40\% ABV neutral spirits;
+15 grams juniper berries;
+5 grams coriander;
+0.15 grams orris root;
+1 gram angelica root;
+1 gram liquorice root;
+2 grams fresh lemon peel;
+cloves;
+star anise;
+0.4 grams Ceylon cinnamon;
+0.5 grams fresh sage;
+0.5 grams fresh rosemary;
+wormwood herb;
+1 gram bitter orange peel.
+}
+
+\recipe{Gin Recipe Idea - Pink Pepper Gin}
+\ingredients{1 liter 40\% ABV neutral spirits;
+pink peppercorns;
+juniper berries;
+cardamom;
+cinnamon;
+honey;
+vanilla bean; 
+tonka bean;
+orris root; 
+Earl Gray tea.
+}
+
+\textsc{Pink Pepper Gin is made by the French company Audemus Spirits. The last two ingredients are a guess.}
+
+
+
+\recipe{Gin Recipe Idea - Beefeater} 
+
+\ingredients{1 liter 40\% ABV neutral spirits;
+juniper berries;
+angelica root;
+angelica seeds;
+coriander seeds;
+licorice;
+almonds,
+orris root;
+Seville oranges;
+lemon peel.
+}
+
+\textsc{Beefeater previously bottled its gin at 94 proof (47 \% ABV).  Now, Beefeater is sold at 88 proof (44 \% ABV). The botanicals used in Beefeater are according to an article in Vinepair.}
+
+
+
+
+\newpage
+
+\recipe{Developing A New Gin Recipe}
+
+Instructions for making 750 ml of gin is a small pot still.
+
+To develop a new gin recipe first pick the botanicals you will use.  Use 3 botanicals from the essential category in Table \ref{tab:essential}: juniper berries, coriander seeds, and either orris root or angelica root as a fixative (or use both).  From 5 to 7 of the other the other categories chose one botanical. This results in 8 to 10 total botanicals. 
+
+Do not crush any of the ingredients. When removing the zest from fresh citrus be careful not to remove any white pith along with the zest. Add all ingredients except the flower petals, fresh herbs and fresh citrus zest to the still.  Zest orange and add orange zest strips and rose petals wrapped in cheese cloth to the gin basket.  Turn on still and after around 25 minutes collect and discard the first 15 ml of distillate to emerge. After this collect the next 425 ml of distillate for use in making the gin. Dilute the collected distillate with purified water to 44 \% ABV. The result should be approximately 750 ml of gin. Bottle and wait at least one week before drinking to allow flavors to stabilize.
+
+Botanical amounts for charging a still with 1 liter of 40\% ABV neutral spirit
+
+\begin{table}[hb]
+    \centering
+    \caption{Essential Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+      	Juniper Berries & It's not gin without it & 15-30 grams  \\
+ 		Coriander Seeds & Lemon and subtle spice  & 2-5 grams \\
+		Orris Root & Light slightly perfumed Parma violet & 0.15 grams \\
+		Angelica Root &  Deep, earthy, musky & 1 gram \\
+        \bottomrule
+    \end{tabular}
+    \label{tab:essential}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Citrus Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+        Dried Lemon Peel & Concentrated flavor use sparring & 0.4-1 grams\\
+        Dried Bitter Orange Peel & Concentrated flavor  use sparring & 0.48-1.2 grams\\
+        Fresh Lime Peel & Remove with a vegetable peeler & 2-4 grams\\
+        Fresh Grapefruit Peel & Remove with a vegetable peeler & 2-4 grams\\
+        Fresh Lemon Peel & Remove with a vegetable peeler & 2-4 grams\\
+        Fresh Navel Orange Peel & Remove with a vegetable peeler & 2-4 grams\\
+        Fresh Blood Orange Peel & Remove with a vegetable peeler & 2-4 grams\\
+        \bottomrule
+    \end{tabular}
+    \label{tab:citrus}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Sweet Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Liquorice root & Subtle sweetness & 1-2 grams \\
+		Honey & Adds a lovely mouth finish  & \quarter to \half teaspoon \\
+		Vanilla bean & Strong flavor use sparring & 0.2 grams \\
+\end{tabular}
+    \label{tab:sweet}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Herbal Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Fresh Rosemary & Savory and strong &  0.5-1 grams \\
+		Fresh Sage & Savory and strong & 0.5-1 grams \\
+		Lemon Balm & Lemony and herbal & 1-2 grams \\
+		Lovage Seeds & Strong bold thyme flavor with hints of spice & 0.5-1 grams\\
+		Fresh Mint & Refreshing and strong in flavor use sparring & 0.1-0.5 grams\\
+		Fresh Thyme & Delicate background herb & 0.5-1 grams \\
+		Dried Hops & Strong in flavor use sparring & 1 or 2 compressed pieces\\
+		Bay Leaf & Subtle savory flavor & \quarter to \half leaf \\
+		Fresh Tarragon &  Aniseed notes and strong herbal flavor & 0.1-0.5 grams\\
+		Dried Lemon Verbena & Lemony with herbal notes & Up to \half teaspoon \\
+\end{tabular}
+    \label{tab:herbal}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Floral Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Fresh or Dried Rose Petals & Epitomizes floral & 0.1-3 grams \\
+		Dried Chamomile Flowers & Subtle floral and dusty flavors & \quarter to \half teaspoon \\
+		Dried Lavender Flowers & Fragrant and strong use sparring & 0.1-0.2 grams \\
+		Dried Elderflower & Floral but quite powerful use sparring & \quarter to \half teaspoon \\
+		Fresh Marigold Flowers & Floral and mild in flavor & 1-2 flowers \\
+		Heather Flowers & Floral and mild in flavor & \quarter to \half teaspoon \\
+\end{tabular}
+    \label{tab:floral}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Spicy Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Ceylon Cinnamon & Subtle sweetness & 0.2-0.4 grams \\
+		Cassia Bark & Grocery store cinnamon & 1-2 grams \\
+		Cardamom Nibs & Strong in flavor do not crush & 0.1-0.2 grams \\
+		Ground Nutmeg & Warming and spicy with subtle sweetness & 0.2-0.4 grams \\
+		Ground Mace & Milder version of nutmeg & 0.2-0.8 grams \\
+		Fresh Ginger & Warming & 0.2-0.4 grams \\
+		Black Peppercorn & Hotter than cubeb berries use whole & 1-2 peppercorns \\
+		Pink Peppercorn & Mild pepper spice & 1-3 peppercorns \\
+		Cubeb Berries & Mild pepper spice, similar to allspice & 1-4 berries \\
+		Whole Cumin & Strong fragrant spice & 0.1-0.2 grams \\
+\end{tabular}
+    \label{tab:spicy}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Fruity Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Dried Mulberries & Sweet and tart & 1-4 grams \\
+		Fresh Blackberries & Rich and a little sharp &  3-8 berries \\
+		Fresh Raspberries & Sweet and sharp & 2-4 berries \\
+		Fresh Apple & Sweet and more subtle & A small slice \\
+		Dried Currants & Sweet & 2-6 currants \\
+		Dried Mango & Sweet and tropical & 6-9 grams \\
+\end{tabular}
+    \label{tab:fruity}
+\end{table}
+
+\begin{table}[hb]
+    \centering
+    \caption{Nutty Botanicals}
+    \begin{tabular}{@{}p{1.25in}p{3in}p{1.25in}@{}}
+        \toprule
+      Botanical &  Comment & Amount per liter \\
+        \midrule
+		Chestnut & Dry and nutty & 1 nut \\
+		Walnut	& Savory, smooth, and buttery & 1 nut \\
+		Pecan Pieces & Lightly toasted & 4-6 grams \\
+		Hazelnut Pieces & Lightly toasted, Stands up well to strong flavors & 1-3 grams \\
+		Ground Almonds & Sweet and nutty & Up to \half teaspoon \\
+\end{tabular}
+    \label{tab:nutty}
+\end{table}	
+
+
+
+ 
 \chapter{Distilling}
+
+\recipe{Turbo Yeast}
+\label{Turbo Yeast}
+
+\ingredients{
+pinch Epsom salts;
+\half tablespoon diamonioum phospate (DAP);
+\half teaspoon citric acid;
+2 tablespoons yeast nutrient; 
+1 tablespoon distiller's yeast.}
+
+Mix all ingredients together in a small stainless steel mixing bowl and store in an airtight container.
+
+Makes enough for a sugar wash made with 5 gallons of water and 10 pounds corn sugar.
+\newpage
 
 \recipe{Ted's Fast Fermenting Vodka}
 \label{TFFV}
@@ -3283,7 +4090,7 @@ Yield: 6 to 8 servings
 pinch Epsom salts;
 \half teaspoon diamonioum phospate (DAP);
 \half teaspoon citric acid;
-50 grams bakers yeast or 25 grams.}
+50 grams bakers yeast or 25 grams distiller's yeast.}
 
 \textsc{This recipe makes 23 liters or 6.1 gallons.}
 
@@ -3307,228 +4114,119 @@ This produces a fast ferment (normally dry to .990 within 3 to 4 days). The star
 Rack off and allow to stand for a couple of days to clear before distilling.
 
 \newpage
-\recipe{Turbo Yeast}
-\label{Turbo Yeast}
 
-\ingredients{
-pinch Epsom salts;
-\half tablespoon diamonioum phospate (DAP);
-\half teaspoon citric acid;
-2 tablespoons yeast nutrient; 
-1 tablespoon distillers yeast.}
-
-Mix all ingredients together in a small stainless steel mixing bowl and store in an airtight container.
-
-Makes enough for a sugar wash made with 5 gallons of water and 10 pounds corn sugar.
 
 \newpage
 \recipe{Rice Wash}
+\label{RiceWash}
 
-\ingredients{6 to 12 kg (13 to 26 lb) of rice (I used 6 kg of medium grain rice); 
-Water; 
+\equilpment{7 gallon brewing pail with air lock, Thermopen MK4 instant-read thermometer.}
+
+\ingredients{10 pounds (4.5 kg) Goya rice flour; 
+4 gallons very-hot tap water; 
 36 grams (1.3 oz) Angel Yellow Label Yeast}
 
-Using a grain mill or food processor, mill the rice to small course pieces.  Measure the volume of the milled rice then put rise in brewing pail. Add a volume of almost boiling water equal to around three times the volume of the milled rice to the pail. Using a paint mixer and drill, agitate the mixture in the pail very well. 
+Add the rice flour to the brewing pail then add the hot water one gallon at a time stirring well after each addition.  Loosely attach the pail's cover then let the wash cool naturally to about 90\deg F (32 \deg C), agitating occasionally to prevent settling. When the wash is 90\deg F add the yeast directly to the wash and stir vigorously. Attach the pail top and the fill air lock.
 
-Let the mixture sit for 1 hour then
-add cold and/or warm water as needed to reach a total volume of 55 liters (14 gal) at 30\deg C (86\deg F).
-Hydrate the yeast in 35\deg C (95\deg F) water. 
-Add the hydrated yeast to the rice wash and agitate using a paint mixer.
-Ferment at 30\deg C (86\deg F).
-Wait for 3 days after fermentation has stopped then rack into still. 
-Run three stripping runs of around 4 gallons.
-Slowly distill the low wines from the three stripping runs in one spirit run 
-making cuts based on flavor. 
+During fermentation control the wash temperature to be 82-97\deg F (28-36\deg C). The optimal fermentation temperature about 90\deg F (32\deg C).
+The fermentation temperature lower limit is 79\deg F (26\deg C) and the upper limit 100\deg F (38\deg C). Agitate the wash twice every day for the first three days of fermentation. At 90\deg F the wash should ferment to dry in around three days. The fermented wash should yield around 10\% ABV. 
+
+\newpage
+\recipe{Corn Wash -- In Development}
+
+\ingredients{10 pounds (4.5 kg) Goya fine corn meal; 
+4 gallons very-hot tap water;
+1 teaspoon Amylase enzyme;
+\half teaspoon Glucoamylase;
+25 grams distiller's yeast.}
+
+AMYLASE ENZYME BSG -- Amylase is easy to use.  When you have finished cooking your mash, allow it to cool to below 170 degrees and stir in one teaspoon (0.1 to 0.3 teaspoons per gallon) amylase per 5 gallons.  Amylase is a self-limiting glucoside there is nothing to be gained by upping the dosage.  Allow the mash to cool for an hour, but keep the temperature above 120 and stir occasionally.  Alternately if you are set up to hold the mash at 152 degrees for one hour that is ideal for highest conversion rates. 
+
+Glucoamylase (10g) – Sufficient for up to 20 pounds of dextrins (\half teaspoon per 5 gallons). For optimal activity add sachet contents to wash or wort once cooled to 131-140\deg F
+(55-60\deg C). Stir to dissolve thoroughly. Pitch yeast once temperature is below 86\deg F
+(30\deg C) and leave to ferment.
+Enzyme is stable up to 149\deg F(65\deg C).
+Optimum pH is pH 4.0 to 4.5 (enzyme is stable between pH 2.8 and pH 5.0).
+Note: all enzymes require 50ppm calcium ions for maximum activity and stability.
+
+Add the corn flour to the brewing pail then add the hot water 3 or 4 liters at a time stirring well after each addition.  Loosely attach the pail's cover then let cool naturally to about 90\deg F (32 \deg C), agitating occasionally to prevent settling. When the wash is 90\deg F add the yeast directly to the wash and stir vigorously. Attach the pail top and the fill air lock.
+
+During fermentation control the wash temperature to be 82-97\deg F (28-36\deg C). The optimal fermentation temperature about 90\deg F (32\deg C).
+The fermentation temperature lower limit is 79\deg F (26\deg C) and the upper limit 100\deg F (38\deg C). Agitate the wash twice every day for the first three days of fermentation. At 90\deg F the wash should ferment to dry in around three days.
+
+\newpage
+
+\recipe{Oak-Aged Rice Spirits -- In Development}
+
+\ingredients{1 liter \hyperref[RiceWash]{rice spirits} at around 70\% ABV; 
+30 grams medium-toasted American white-oak chips;
+6 one-inch cubes cut from a used bourbon barrel head.}
+
+Combine all ingredients in a large glass jar with a tightly fitting lid. Place jar in an out of the way location, preferably in a storage room or shed where the temperature cycles from day to night.
+
+Start checking the spirits for taste, smell and color after a month of so of aging and then every week or two thereafter. The raw spirit taste and smell should be replaced by the smell and taste of whiskey.  Also, the spirit should turn a dark golden brown so that it is will be the color of commercial whiskey after it is proofed down to 45\% ABV and transferred to a 750 ml bottle. This transformation should take around 3 to 6 months.
+
+When the spirits are ready, carefully pour off of the wood into a very fine-mesh stainless steel conical-strainer and collect the strained spirits. Proof the strained spirits down to 45\% ABV and bottle.
 
 
-Instructions from Angel Yellow Label Yeast: For 100 kg of grain.
-The finer the grind, the sooner it finishes.
-Mix 100 kg with 250-300 kg of hot water.
-Let cool naturally to about 90\deg F (32 \deg C), agitating to prevent settling.
-Directly add 0.5-0.8 kg of the starter. Agitate.
-Control the temperature to be 82-97\deg F (28-36\deg C), optimal fermentation temperature about 90\deg F (32\deg C).
-Lower limit 79\deg F (26\deg C), upper limit 100\deg F (38\deg C).
-Agitate twice every day in the first three days.
-Ferment for 8-15 days.
 
 \newpage
 \recipe{Bearded's Invert Sugar Vodka Wash} 
 
 \ingredients{20 pounds (9 kg) white sugar;
 5 teaspoons citric acid;
-10 teaspoons  yeast nutrient (Fermaid O);
+5 teaspoons + 5 teaspoons  yeast nutrient (Fermaid O);
+\quarter teaspoon Epsom salt;
 5 tablespoons distiller's yeast (Red Star DADY);
-sodium carbonate;
-\quarter teaspoon Epsom salt.}
+sodium carbonate as needed.}
 
-Mix 3 gallons of water with sugar and citric acid. Stir to dissolve. Bring to a boil and then boil for 20 minutes. Turn off fire and cool for 1 hour. Combine invert sugar syrup with 9 gallons of water. Add half the yeast nutrient and Epson salt and stir.  Add distillers yeast and stir.  Check PH and adjust to between 4.4 and 5.4.  To raise PH add 1 tablespoon of sodium carbonate. Measure SP and record. The SP should be close to 1.092 (12.08 potential ABV). When SP drops by 30 percent and the second half of the yeast nutrient. 
+Mix 3 gallons of water with sugar and citric acid. Stir to dissolve. Bring to a boil and then boil for 20 minutes. Turn off fire and cool for 1 hour. Combine invert sugar syrup with 9 gallons of water. Add 5 teaspoons of yeast nutrient and Epson salt and stir.  Add distillers yeast and stir.  Check PH and adjust to between 4.4 and 5.4.  To raise PH add 1 tablespoon of sodium carbonate. Measure SP and record. The SP should be close to 1.092 (12.08 potential ABV). When SP drops by 30 percent add the second 5 teaspoons of the yeast nutrient. 
 
-Distilling the 12 gallons of wash in striping runs should result in 3 gallons of 40\% AVB low wines.  Add sodium carbonate (washing soda) at a rate of 1 teaspoon per liter of low wines.  Add a few liters of water to the low wines to help it distill.  Make a spirits run.  The spirits run should result in 1 gallon of hearts at 75 percent from a pot still or 3 liters of 85 percent with thumper.  For the best results filter diluted spirits with a carbon filter.
-
-
-\recipe{40\% ABV Neural Spirits}
-
-\ingredients{1,270 ml Everclear; 1,730 ml purified water.}
-
-To make 3 liters of neural spirits at 40\% ABV mix 1,270 ml of Everclear with 1,730 ml of purified water.
-\newpage
-
+If using a pot still, distilling the 12 gallons of wash in striping runs should result in 3 gallons of 40\% AVB low wines.  For a spirits run in a pot still, add sodium carbonate (washing soda) at a rate of 1 teaspoon per liter of low wines to increase the amount of hearts in the run.  Add a few liters of water to the low wines to help it distill.  Make a spirits run.  The spirits run should result in 1 gallon of hearts at 75 percent from a regular pot still or 3 liters of 85 percent with  for a pot still with a thumper.  For the best results filter diluted spirits with a carbon filter.
 
 \newpage
-\recipe{Gin \#5}
+\recipe{Absinthe -- In Development} 
+\label{Absinthe}
 
-\equilpment{Still Spirits Air-Still with gin basket, alcohol hydrometer, Thermopen MK4 instant-read thermometer.}
-
-\ingredients{
-1 liter 40\% ABV neutral spirits;
-20 grams juniper berries;
-5 grams coriander seeds; 
-1 gram angelica root, coarsely ground;
-0.2 grams cardamom seeds; 
-0.1 grams vanilla bean;
-0.5 grams fresh lemon thyme leaves;
-2 grams hazelnut pieces, lightly toasted;
-35 grams peeled and seeded ripe pear (or apple if pear is unavailable);
-2 gram fresh rose petals or 1 gram dried rose petals;
-4 grams fresh lemon or orange zest;
-0.7 grams dried bitter orange peel, coarsely ground (optional);
-\half teaspoon honey (optional).
-} 
-
-\textsc{Making neutral spirits from scratch that is neutral enough to use in gin making requires a column still and a carbon filtering apparatus. Because of this most people are better off purchasing neutral spirits from the liquor store. For this recipe you can use either bottom shelf 80 proof vodka or Everclear diluted to 40\% ABV. I don't crush the juniper berries in this recipe for two reasons. First, using crushed berries gives inconsistent results because is it difficult to crush uniformly and consistently. Second, I find that crushed berries release harsh flavors that whole berries do not. For similar reasons I don't macerate the botanicals in the spirits before distilling. I put the fresh citrus zest in the gin basket because I like the fresh citrus flavor that results better than the marmalade like flavor that results from putting the zest into the still with the spirits.  Discarding the first 25 ml of distillate is done to control the amount of juniper and citrus oil in the final product.  Without this step the gin is likely to louch (turn cloudy) when water is added to it and have too much juniper and citrus flavor. }
-
-Do not crush any of the ingredients. Add all ingredients except the rose petals and orange zest to the still. For a very citrus forward gin you can use up to 8 grams of fresh citrus zest, however, you will likely have to correct the diluted gin for louching if you do.  Zest the orange or lemon with a sharp vegetable peeler and add zest strips and rose petals wrapped in cheese cloth to the gin basket.  Turn on still and after the first drip from the still at around 17 minutes collect and discard the first 25 ml of distillate to emerge. After this collect the next 425-450 ml of distillate for use in making the gin. Dilute the collected distillate with purified water to 44 \% ABV. The result should be approximately 750 ml of gin. Bottle and wait at least one week before drinking to allow flavors to stabilize.
-
-If the gin has too much juniper or citrus flavor to suit you then 
-add 44 \% ABV neutral spirits (can be made by diluting Everclear) to the gin to reduce the flavor. Similarly, to correct louching, add 44 \% ABV neutral spirits to your gin until it is clear.
-
-The maximum fill level of the Still Spirits Air-Still is 4 liters so you can scale the given recipe by 2 or 3 without exceeding the capacity of the still. For a times 2 or times 3 recipe run is it only necessary to collect and discard the first 25 ml of distillate.  When starting with 2 liters of neural spirits for a times 2 run the time to first drip from the still is 32 minutes. After the first 25 ml, collect 850-900 ml of the distillate to make the gin.
-
-When starting with 3 liters of neural spirits for a times 3 run, the time to first drip from the still is around 40 minutes. After the first 25 ml, collect 1,275-1,350 ml of the distillate to make the gin 
-
-
-
-
-\newpage
-\recipe{Gin \#6}
-
-\equilpment{Still Spirits Air-Still with gin basket, alcohol hydrometer, Thermopen MK4 instant-read thermometer.}
-
-\ingredients{
-1 liter 40\% ABV neutral spirits;
-14 grams juniper berries;
-5 grams coriander seeds; 
-1 gram angelica root, coarsely ground;
-0.15 grams orris root, coarsely ground;
-0.5 grams cardamom seeds; 
-0.2 grams vanilla bean;
-0.5 grams dried thyme leaves;
-0.2 grams licorices powder;
-5 grams pecan pieces, lightly toasted;
-6 grams dried Mulberries;
-0.7 grams dried bitter orange peel, coarsely ground (optional);
-2 gram fresh rose petals or 1 gram dried rose petals;
-4 grams fresh orange or lemon zest
-} 
-
-Do not crush any of the ingredients. Add all ingredients except the rose petals and citrus zest to the still.  Zest citrus and add citrus zest strips and rose petals wrapped in cheese cloth to the gin basket.  Turn on still and after around 17 minutes collect and discard the first 25 ml of distillate to emerge. After this collect the next 450 ml of distillate for use in making the gin (this will take around 22 minutes after discarding the first distillate). Dilute the collected distillate with purified water to 44 \% ABV. The result should be approximately 750 ml of gin. Bottle and wait at least one week before drinking to allow flavors to stabilize.
-
-\newpage 
-\recipe{Gin Recipe Idea \#1}
-
-\ingredients{1 liter 40\% ABV neutral spirits;
-juniper berries;
-orris root;
-angelica;
-liquorice;
-coriander;
-lemon peel;
-cardamom;
-cubeb berries;
-elderflower.
+\ingredients{\\
+\\
+\textsc{Infusion and Distillation}
+28 grams of wormwood;
+9 grams of hyssop leaves;
+17 grams of calamus root (maybe not - replace with angelica root);
+6 grams of melissa officinalis (lemon balm);
+28 grams of aniseed;
+25 grams of fennel;
+10 grams of star anise;
+3 grams of coriander.\\
+\\
+\textsc{Coloring}
+4 grams of fresh mint;
+1 gram of melissa;
+3 grams of wormwood;
+1 gram of lime zest;
+4 grams of liquorice root.
 }
 
-\recipe{Gin Recipe Idea \#2}
-\ingredients{1 liter 40\% ABV neutral spirits;
-juniper berries;
-orris root;
-angelica;
-liquorice;
-coriander;
-lemon peel;
-cloves;
-star anise;
-cinnamon;
-sage;
-rosemary;
-wormwood;
-bitter orange peel.
-}
+    
+\textsc{Absinthe is a gin without juniper but which contains, at a minimum, wormwood, aniseed and fennel. This recipe uses both infusion and distillation to make absinthe.}
 
-\recipe{Gin Recipe Idea - Pink Pepper Gin}
-\ingredients{1 liter 40\% ABV neutral spirits;
-pink peppercorns;
-juniper berries;
-cardamom;
-cinnamon;
-honey;
-vanilla bean; 
-tonka bean;
-orris root; 
-Earl Gray tea.
-}
+Add all of the ingredients to 800 ml of 43\% ABV neutral alcohol, and steep for 10 days.
 
-\textsc{Pink Pepper Gin is made by the French company Audemus Spirits. The last two ingredients are a guess.}
+Add 600ml of distilled or reverse osmosis filtered water, and steep for 3 more days.
 
-\recipe{Gin Recipe Idea - Mango Mulberry Gin}
+Filter out the solids from the macerated liquid and distill.
 
-\ingredients{1 liter 40\% ABV neutral spirits;
-7.45 grams dried mango;
-\half teaspoon ground almonds;
-30 grams juniper berries;
-2 grams coriander seeds;
-2 pink peppercorns;
-0.75 grams angelica root;
-3mm piece of vanilla bean;
-5 dried mulberries (3.22g);
-2 Pieces of dried orange peel (0.24g);
-1 piece of dried lemon peel (0.1g).
-}
+Dilute the recovered distillate to 50\% ABV with distilled water or reverse osmosis filtered water.
 
-\recipe{Gin Recipe Idea - Beefeater} 
+To color the absinthe green, steep the coloring ingredients in the diluted distillate for 3 to 4 days then filter through multiple coffee filters to remove all solids and sediment and bottle. As an alternative to steeping, sous vide the diluted distilate and coloring ingredients in a sealed bag for 30 minutes at 60\deg C.
 
-\ingredients{1 liter 40\% ABV neutral spirits;
-juniper berries;
-angelica root;
-angelica seeds;
-coriander seeds;
-licorice;
-almonds,
-orris root;
-Seville oranges;
-lemon peel.
-}
+Label bottle La F\'{e}e Verte (``The Green Fairy'').
 
-\textsc{Beefeater previously bottled its gin at 94 proof (47 \% ABV).  Now, Beefeater is sold at 88 proof (44 \% ABV). The botanicals used in Beefeater are according to an article in Vinepair.}
+% https://distillique.co.za/blogs/recipes/homemade-absinthe-recipe
 
-
-\recipe{Gin Recipe Idea - Bombay Sapphire}
-
-\ingredients{1 liter 40\% ABV neutral spirits;
-15 grams juniper berries;
-7.5 grams coriander seeds; 
-1.5 grams angelica root, coarsely ground;
-0.15 grams orris root, coarsely ground;
-1.5 grams ground almonds;
-1 gram dried lemon peel;
-1.5 grams liquorice root;
-1.5 grams cassia bark;
-1.5 grams cubeb berries;
-1.5 grams grains of paradise
-2 grams fresh lemon zest.
-}
-
-\textsc{Bombay Sapphire according to an article in Wired Magazine.}
+\chapter{Components}
+Place for roux, stock, and other standard recipes that are used in many other recipes.
 
 \chapter{  More of an Idea than a Recipe}
 
@@ -3639,7 +4337,7 @@ Slowly add water to fill and then add the food coloring a drop at at time until 
 disposable aluminum casserole dish;
 aluminum foil.}
 
-Add baking soda to aluminum casserole dish and then add near boiling water.  Stir until baking soda is dissolved and then add silver pieces. Wearing rubber gloves, scrub silver pieces with aluminum foil as necessary then rinse and dry.  Add additional silver pieces to dish and repeat steps. This process is less effective as the solution cools. If you will be cleaning a large number of pieces then you can put the aluminum casserole dish in a cast iron casserole dish placed on a cooktop to maintain a solution temperature just under boiling. Discard the aluminum casserole dish when finished.
+Add baking soda to aluminum casserole dish and then add near boiling water.  Stir until baking soda is dissolved and then add silver pieces. Wearing rubber gloves, scrub silver pieces with aluminum foil as necessary then rinse and dry.  Add additional silver pieces to dish and repeat steps. This process is less effective as the solution cools. If you will be cleaning a large number of pieces then you can put the aluminum casserole dish in a cast iron casserole dish placed on a cook top to maintain a solution temperature just under boiling. Discard the aluminum casserole dish when finished.
 
 \recipe{Cleaning Solution for Copper}
 \label{CleaningSolution}
@@ -3655,6 +4353,8 @@ Mix all ingredients by shaking in a closed bottle with a top and then allow to s
 \ingredients{10 grams of either baking soda or sodium carbonate.}
 
 If using baking soda first convert it to sodium carbonate by baking it in a 200\deg F oven for one hour.  Mix the sodium carbonate with 1 liter of water and pour into coffee maker's reservoir. Turn on the machine and complete the brew cycle.  After the cycle is complete, rinse all machine components that come into contact with the solution and then repeat the brew cycle twice with clean water.
+
+\newpage
 
 \recipe{Season a Cast Iron Pan}
 
@@ -3694,6 +4394,30 @@ Repeat steps 1-4 until done.
 \ingredients{\quarter cup hot water; 1 tablespoon honey; \half cup apple cider vinegar; 1 teaspoon dishwashing liquid (unscented is best but not necessary)}
 
 In a small bowl combine hot water and honey. Stir with a small whisk until the honey is completely dissolved. Add the cider vinegar and incorporate.  Add dishwashing liquid and whisk slowly to avoid making bubbles.  Add the solution to a small water glass and set on the counter in a area where fruit flies are a problem.
+
+\recipe{Spiral Prismatic Packing}
+
+Diameter of SPP = 3.5 mm (0.1 inch)
+
+Diameter of wire 0.2-0.3 mm (0.008 inch - 0.01 inch)
+
+Number of turns = 11
+
+Approximately 1 kg of 3.5 mm diameter SPP are required to fill a 44mm long 2 inch diameter pipe.
+
+OR
+
+Diameter of SPP = 5.5 mm (0.19 inch)
+
+Diameter of wire 0.2-0.3 mm (0.008 inch - 0.01 inch)
+
+Number of turns = 14
+
+Doctor-gradus uses a triangular cross-section bar to form its SPP.
+
+Approximately 650 grams of 5.5 mm diameter SPP are required to fill a 44mm long 2 inch diameter pipe.
+
+Doctor-gradus uses a triangular cross-section bar to form its stainless steel SPP. Food grade M1 copper and a square cross-section bar is used for copper SPP.
 
 \end{document}
 
@@ -3796,7 +4520,7 @@ Source: John Willingham from John Willingham's World Champion Bar-B-Q.
 %
 \recipe{Simple Sugar Wash for Distilling}
 \label{SimpleWash}
-\equilpment{9.5 liter stainless steel stock pot; long handled stainless steel spoon; 12 liter (3 gallon) plastic fermenter with lid and airlock; triple-scale hydrometer; Thermapen digital thermometer; 2 liter (8 cup) pyrex measuring cup; no-wash sanitizing product.}
+\equilpment{9.5 liter stainless steel stock pot; long handled stainless steel spoon; 12 liter (3 gallon) plastic fermenter with lid and airlock; triple-scale hydrometer; Thermapen digital thermometer; 2 liter (8 cup) Pyrex measuring cup; no-wash sanitizing product.}
 
 \ingredients{1.75 kg sugar;
 1.5 g citric acid;
@@ -3875,3 +4599,35 @@ With this amount of orange zest your gin may louch. To correct louching, add 44 
 
 Comment: For this recipe I used purchased 50 \% ABV vodka. The recipe yielded excellent if very orange forward gin after it was diluted to correct louching. The juniper flavor was not as harsh as previous recipes and I believe that is because the berries were not crushed.
 
+recipe{Rice Wash}
+
+\ingredients{6 to 12 kg (13 to 26 lb) of rice (I used 6 kg of medium grain rice); 
+Water; 
+36 grams (1.3 oz) Angel Yellow Label Yeast}
+
+Using a grain mill or food processor, mill the rice to small pieces. If using a food processor, process in 1 kg batches for 5 minutes per batch (let the processor cool between processing batches). Measure the volume of the milled rice then put rice in brewing pail. Add a volume of almost boiling water equal to around three times the volume of the milled rice to the pail. Using a paint mixer and drill, agitate the mixture in the pail very well. 
+
+Let the mixture sit for 1 hour then
+add cold and/or warm water as needed to reach a total volume of 55 liters (14 gal) at 30\deg C (86\deg F).
+Hydrate the yeast in 35\deg C (95\deg F) water. 
+Add the hydrated yeast to the rice wash and agitate using a paint mixer.
+Ferment at 30\deg C (86\deg F).
+Wait for 3 days after fermentation has stopped then rack into still. 
+Run three stripping runs of around 4 gallons.
+Slowly distill the low wines from the three stripping runs in one spirit run 
+making cuts based on flavor. 
+
+Dunder and Lightning uses 6kg medium grain rice plus 20 liters of boiling water and 20 liters of cold water and 36 grams of yeast. He stirs every day for the first three days and then ferments to dry in 2 weeks. His yield was 1.4 liters of 94\% ABV. 
+
+
+Instructions from Angel Yellow Label Yeast: For 100 kg of grain.
+The finer the grind, the sooner it finishes.
+Mix 100 kg with 250-300 kg of hot water.
+Let cool naturally to about 90\deg F (32 \deg C), agitating to prevent settling.
+Directly add 0.5-0.8 kg of the starter. Agitate.
+Control the temperature to be 82-97\deg F (28-36\deg C), optimal fermentation temperature about 90\deg F (32\deg C).
+Lower limit 79\deg F (26\deg C), upper limit 100\deg F (38\deg C).
+Agitate twice every day in the first three days.
+Ferment for 8-15 days.
+
+According to the Angle Yellow Label Yeast instruction 6 kg (13.2 pounds) of rice would call for 18 liters (4.76 gallons) of water.  This is much less water than used in the recipes above. The 36 grams of yeast corresponds to 600 grams of yeast for 100 kg of rice. This is within the range recommended by the instructions.
