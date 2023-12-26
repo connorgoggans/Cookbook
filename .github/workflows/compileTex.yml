@@ -10,6 +10,8 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: NewCookbook.tex
+          continue_on_error: true
+          latexmk_use_lualatex: true
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
