@@ -10,7 +10,7 @@ jobs:
         uses: xu-cheng/latex-action@v3
         with:
           root_file: NewCookbook.tex
-          continue_on_error: true
+          pre_compile: "tlmgr install xfrac"
       - name: Upload PDF
         uses: actions/upload-artifact@v3
         with:
