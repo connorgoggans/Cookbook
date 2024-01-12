@@ -18,6 +18,10 @@ jobs:
           root_file: NewCookbook.tex
           pre_compile: "tlmgr list --only-installed"
           latexmk_shell_escape: true
+      - name: Run make4ht 
+        uses: docker://ghcr.io/michal-h21/make4ht-action:latest
+        env:
+           command: "make4ht -u -d out main.tex" 
       - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
