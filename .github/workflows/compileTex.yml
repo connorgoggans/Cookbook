@@ -18,11 +18,16 @@ jobs:
           root_file: NewCookbook.tex
           pre_compile: "tlmgr list --only-installed"
           latexmk_shell_escape: true
-      - name: Upload PDF
+      - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: Cookbook
           path: NewCookbook.pdf
+      - name: Upload Artifact For Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
 
   deploy:
     needs: build_latex
@@ -35,11 +40,6 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v4
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          # Upload entire repository
-          path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
