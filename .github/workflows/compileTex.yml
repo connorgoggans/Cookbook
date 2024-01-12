@@ -21,7 +21,7 @@ jobs:
       - name: Run make4ht 
         uses: docker://ghcr.io/michal-h21/make4ht-action:latest
         env:
-           command: "make4ht -u -d out main.tex" 
+           command: "make4ht -u -d out NewCookbook.tex" 
       - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
