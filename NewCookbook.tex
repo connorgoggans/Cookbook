@@ -12,23 +12,14 @@
 %\sisetup{quotient-mode = fraction}
 \sisetup{parse-numbers = false}
 \usepackage[margin=1.25in]{geometry} 
-\usepackage{ifpdf}
-\hypersetup{colorlinks=true,linkcolor=blue}
 
-\ifx\HCode\UnDef\else\hypersetup{tex4ht}\fi
-
-\ifpdf 
-        \usepackage[pdftex,breaklinks]{hyperref}
+\ifdefined\HCode 
+    \usepackage[breaklinks]{hyperref}
+    \hypersetup{tex4ht}
 \else 
-      %  latex code, check if htlatex is loaded and use link only then 
-      \ifdefined\HCode 
-         \usepackage{hyperref}
-         \hypersetup{tex4ht}
-      \else 
-       I am in latex mode %  shows up in dvi and .ps only but not in html 
-      \fi 
-\fi
-
+    \usepackage[pdftex,breaklinks]{hyperref}
+    \hypersetup{colorlinks=true,linkcolor=blue} 
+\fi 
 
 % Include the following to enable nicer-looking tables
 \usepackage{booktabs}
