@@ -9,6 +9,9 @@ permissions:
 jobs:
   build_latex:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.8]
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
@@ -18,10 +21,15 @@ jobs:
           root_file: NewCookbook.tex
           pre_compile: "tlmgr list --only-installed"
           latexmk_shell_escape: true
-      - name: Run make4ht 
-        uses: docker://ghcr.io/michal-h21/make4ht-action:latest
-        env:
-           command: "make4ht -u -d out NewCookbook.tex" 
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: PDF To Markdown
+        uses: northy/pdf-to-markdown-workflow@master
+        with:
+          pdf_input: NewCookbook.pdf
+          source_md: cookbook.md
       - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
