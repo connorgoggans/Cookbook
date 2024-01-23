@@ -30,6 +30,8 @@ jobs:
         with:
           pdf_input: NewCookbook.pdf
           source_md: cookbook.md
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
