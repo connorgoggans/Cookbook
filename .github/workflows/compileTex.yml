@@ -1,5 +1,11 @@
 name: Build LaTeX document
 on: [push]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+  
 jobs:
   build_latex:
     runs-on: ubuntu-latest
@@ -12,8 +18,28 @@ jobs:
           root_file: NewCookbook.tex
           pre_compile: "tlmgr list --only-installed"
           latexmk_shell_escape: true
-      - name: Upload PDF
+      - name: Upload PDF to Job Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: Cookbook
           path: NewCookbook.pdf
+      - name: Upload Artifact For Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # Upload entire repository
+          path: '.'
+
+  deploy:
+    needs: build_latex
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -12,9 +12,14 @@
 %\sisetup{quotient-mode = fraction}
 \sisetup{parse-numbers = false}
 \usepackage[margin=1.25in]{geometry} 
-\usepackage[pdftex,breaklinks]{hyperref}
-\hypersetup{colorlinks=true,linkcolor=blue}
 
+\ifdefined\HCode 
+    \usepackage[breaklinks]{hyperref}
+    \hypersetup{tex4ht}
+\else 
+    \usepackage[pdftex,breaklinks]{hyperref}
+    \hypersetup{colorlinks=true,linkcolor=blue} 
+\fi 
 
 % Include the following to enable nicer-looking tables
 \usepackage{booktabs}
