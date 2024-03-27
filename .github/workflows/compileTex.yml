@@ -23,6 +23,12 @@ jobs:
         with:
           name: Cookbook
           path: NewCookbook.pdf
+      - name: Convert PDF to HTML
+        run: |
+            sudo apt install npm
+            sudo apt install default-jre
+            npm install -g pdf2html
+            node conversion.js
       - name: Upload Artifact For Pages
         uses: actions/upload-pages-artifact@v3
         with:
