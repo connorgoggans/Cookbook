@@ -1,0 +1,17 @@
+# Virtual environment
+pdfconvert/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+
+# Output files
+*.pdf
+output.md
+output.html
