@@ -312,9 +312,14 @@ def convert(input_path: str, output_path: str) -> None:
             "--standalone",
             "--toc",
             "--css=style.css",
-            "-o",
-            output_path,
         ]
+
+        # Inject the floating "back to contents" button, if present
+        toc_button_path = Path(__file__).parent / "toc-button.html"
+        if toc_button_path.exists():
+            cmd.append(f"--include-after-body={toc_button_path}")
+
+        cmd += ["-o", output_path]
 
         result = subprocess.run(cmd, capture_output=True, text=True)
         if result.returncode != 0:

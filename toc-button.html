@@ -1,0 +1,22 @@
+<!-- Injected via pandoc --include-after-body: floating "back to contents" button. -->
+<a href="#TOC" id="toc-jump" aria-label="Back to table of contents" title="Back to table of contents">
+  <span aria-hidden="true">&#9776;</span>
+  <span class="toc-jump-label">Contents</span>
+</a>
+<script>
+  (function () {
+    var button = document.getElementById('toc-jump');
+    var toc = document.getElementById('TOC');
+    if (!button || !toc) return;
+
+    // Show the button only once the table of contents has scrolled out of view.
+    function update() {
+      var past = toc.getBoundingClientRect().bottom < 0;
+      button.classList.toggle('is-visible', past);
+    }
+
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update, { passive: true });
+  })();
+</script>
