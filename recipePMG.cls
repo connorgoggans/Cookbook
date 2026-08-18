@@ -78,12 +78,13 @@
 \newcommand{\inghead}{\relax}
 \newcommand{\ingredients}[1]
     {{\list{}{\rightmargin 1em\leftmargin 1em}%
-    \item[]\textit{\inghead#1}\endlist}%
+    \item[]\emph{\inghead#1}\endlist}%
     \hrule height0.25pt width\hsize}
     
 \newcommand{\equhead}{\relax}    
 \newcommand{\equilpment}[1]
     {{\list{}{\rightmargin 1em\leftmargin 1em}%
-    \item[]\textit{\equhead#1}\endlist}%
+    \item[]\emph{\equhead#1}\endlist}%
     }
 
+%     \item[]\textit{\equhead#1}\endlist}%
