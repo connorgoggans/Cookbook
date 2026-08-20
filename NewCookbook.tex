@@ -7,6 +7,7 @@
 \usepackage{bookman}
 %\usepackage{palatino}
 \usepackage[T1]{fontenc}
+\usepackage[us]{datetime}
 \usepackage{nicefrac}
 \usepackage {graphicx}
 \usepackage{pdflscape}
@@ -4301,14 +4302,32 @@ Place sausage mixture in a stuffer and stuff in standard hog casings.  Make link
 \newpage
 
 \recipe{Grinder Plate Sizes}
-\textsc{This is not a recipe but rather a list of meat grinder plate hole sizes giving the hole diameter in mm and the approximate equivalent diameter as a rational number in inches.}
+\textsc{This is a table of the hole sizes of meat grinder plates, giving the diameter of the hole in millimeters and the approximate equivalent diameter as a rational number in inches.}
+
+\begin{table}[H]
+    \centering
+ %   \caption{Grinder Plate Hole Diameter Approximate Equivalence}
+    \begin{tabular}{@{}cc@{}}
+        \toprule
+     Hole Diameter (mm) & Approximate Diameter (inches) \\
+        \midrule
+		3  &  \eighth\\
+        4.5  &  \threesixteenths\\
+        6  &  \quarter\\
+        10  &  \threeeights\\
+        16  &  \fiveeights
+\end{tabular}
+ 
+\end{table}
+ 
 
 
-$$ \SI{3}{\milli\meter} \approx \frac{1}{8}{inch}$$
-$$ \SI{4.5}{\milli\meter} \approx \frac{3}{16}{inch}$$
-$$ \SI{6}{\milli\meter} \approx \frac{1}{4}{inch}$$
-$$ \SI{10}{\milli\meter} \approx \frac{3}{8}{inch}$$
-$$ \SI{16}{\milli\meter} \approx \frac{5}{8}{inch}$$
+
+%$$ \SI{3}{\milli\meter} \approx \frac{1}{8}{inch}$$
+%$$ \SI{4.5}{\milli\meter} \approx \frac{3}{16}{inch}$$
+%$$ \SI{6}{\milli\meter} \approx \frac{1}{4}{inch}$$
+%$$ \SI{10}{\milli\meter} \approx \frac{3}{8}{inch}$$
+%$$ \SI{16}{\milli\meter} \approx \frac{5}{8}{inch}$$
 
 
 \chapter{Thanksgiving}
