@@ -12,6 +12,7 @@ import re
 import subprocess
 import sys
 import tempfile
+import zoneinfo
 from pathlib import Path
 
 # Fraction command -> Unicode replacement
@@ -174,9 +175,26 @@ def extract_braced(text: str, pos: int) -> tuple[str | None, int]:
     return None, -1
 
 
+def current_date() -> datetime.date:
+    """Today's date in US Central time, whatever timezone the build runs in.
+
+    CI runners (GitHub Actions included) run in UTC, which is already the next
+    day during the Central evening.
+    """
+    try:
+        tz = zoneinfo.ZoneInfo("America/Chicago")
+    except zoneinfo.ZoneInfoNotFoundError:
+        print(
+            "warning: no tz database available; using the local timezone for the date",
+            file=sys.stderr,
+        )
+        tz = None  # datetime.now(None) falls back to local time
+    return datetime.datetime.now(tz).date()
+
+
 def expand_today(text: str) -> str:
     r"""Replace \today with a long-form date, e.g. "August 20, 2026"."""
-    today = datetime.date.today()
+    today = current_date()
     formatted = f"{today:%B} {today.day}, {today.year}"
     return re.sub(r"\\today\b", formatted, text)
 
