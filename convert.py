@@ -7,6 +7,7 @@ Usage:
     python convert.py NewCookbook.tex output.html
 """
 
+import datetime
 import re
 import subprocess
 import sys
@@ -173,6 +174,13 @@ def extract_braced(text: str, pos: int) -> tuple[str | None, int]:
     return None, -1
 
 
+def expand_today(text: str) -> str:
+    r"""Replace \today with a long-form date, e.g. "August 20, 2026"."""
+    today = datetime.date.today()
+    formatted = f"{today:%B} {today.day}, {today.year}"
+    return re.sub(r"\\today\b", formatted, text)
+
+
 def expand_recipe(text: str) -> str:
     r"""Replace \recipe{X} with \subsection*{X}."""
     return re.sub(
@@ -228,6 +236,9 @@ def preprocess(text: str) -> str:
 
     # Replace \deg with degree symbol
     text = re.sub(r"\\deg\b", "°", text)
+
+    # Replace \today with a long-form date
+    text = expand_today(text)
 
     # Expand fraction commands (before other expansions since they appear inside
     # \ingredients bodies)
